@@ -1,0 +1,229 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS</title>
+        <!--This website covers styling including
+            Text styling
+            Inline styling
+            ID styling
+            Class styling
+            Div and span styling
+            Manipulating the box model
+            Backgrounds
+            Floating (alignment)
+            Postioning
+            Z-index (front 1 to back 99)
+            Visibility
+            Display
+            Text styling in a class
+            Text overflow
+            Image sections
+            Image opacity
+            List styling
+            Link styling
+            Gradients
+            2D transformations
+            3D tranformations
+            Animations-->
+        <style>
+            #paragraphstyle
+/*        Text styling*/
+                {color: aqua;
+                font-size: 30}
+            .orange
+                {color: orange;}
+            .circlebox 
+                {background-image: url(image.jpg);
+                background-size: contain;
+                background-origin: padding-box;
+                background-position: center;
+                color: white;
+                height: 100px;
+                width: 100px;
+                padding: 16px;
+                border-width: 10px 10px;
+                border-style: groove;
+                border-color: yellow;
+                border-radius: 100px;
+                position: fixed;
+                left: 700px}
+            .yellowbox
+                {background-color: rgb(222, 224, 85);
+                height: auto;
+                width: 500px;
+                padding: 10px 5px 7px 3em;
+                border-width: 5px;
+                border-color: aqua black green pink;
+                border-style: dashed;
+                outline-style: solid;
+                outline-color: black;
+                outline-width: thick;
+                margin: 10px;
+                float: right}
+            .greenbox
+                {background-color: green;
+                color: white;
+                width: 300px;
+                height: 50px;
+                border: 10px red ridge;
+                z-index: 3;
+                text-align: center;
+                font-size: 25px;
+                font-family: fantasy}
+            .redbox
+                {background-color: darkred;
+                width: 200px;
+                visibility: hidden;
+                display: none;}
+            .purplebox
+                {background-color: purple;
+                width: 200px;
+                height: 200px;
+                color: aliceblue;
+                text-decoration: underline;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 1.5em;
+                letter-spacing: 10px;
+                text-shadow: 3px 3px 3px black;
+                font-family: "Times New Roman", Times, serif;
+                overflow: auto;
+                white-space: nowrap;
+                text-overflow: ellipsis;}
+            .purplebox:hover
+                {overflow: visible}
+            .pinkbox
+                {border-width: thin;
+                border-style: solid;
+                width: 200px;
+                word-break: break-all;}
+            .different
+                {color: red;
+                font-size: 110%}
+            .different2
+                {color: aliceblue;
+                display: block}
+            #one
+                {width: 100px;
+                height: 100px;
+                background: url(image.jpg) -275px -250px;}
+            .imageone
+                {width: 300px;
+                opacity: 0.5;}
+            ul.listone
+                {list-style: armenian;
+/*                {list-style-image: url(image.jpg);}*/
+                padding: 0;
+                margin: 0;}
+            ul.listtwo li
+                {background-image: url(image.jpg);
+                width: 300px;
+                padding-left: 30px;
+                background-position: center}
+            a:link
+                {color: red}
+            a:hover
+                {font-size: 200%}
+            div.divone a:active
+                {font-size: 300%}
+            div.divone a:visited
+                {color: white}
+            .divtwo
+                {height: 100px;
+                background: linear-gradient(to right,rgba(0,255,0,0.5),rgba(160,10,10,1));
+/*                background: -webkit-linear-gradient(blue,white);*/
+/*                background: -moz-linear-gradient(blue,white);*/
+/*                background: -o-linear-gradient(blue,white);}*/
+                transform: rotate(-3deg);
+/*                transform: translate(-20px);*/
+/*                transform: scale(0.75)*/
+/*                transform: skew(10deg, 10deg)*/
+                -webkit-animation: animation 3s;
+                position: relative}
+            @keyframes animation
+                {0%{background: red;left:0px;top:0px}
+                25%{background: blue;left:200px;top:0px}
+                50%{background: green;left:200px;top:200px}
+                75%{background: yellow;left:0px;top:200px}
+                100%{background: red;left:0px;top:0px}}
+            .divthree
+                {height: 100px;
+                width: 100px;
+                background: radial-gradient(circle,red 10%,white 80%,blue 10%);
+                transition: width 3s, height 1s, tranform 5s;}
+            .divthree:hover
+                {width: 300px;
+                height: 300px;
+                transform: rotatex(180deg)}
+            p {margin: 0}
+        </style>
+    </head>
+        
+    <body>
+        <!--Inline CSS-->
+            <p style="color: green; font-size: 200%">This is a page to mark up CSS</p>
+            <p>P2 was removed</p>
+        <!--ID CSS-->
+            <p id="paragraphstyle">This is a third paragraph</p>
+        <!--Class CSS-->
+            <p class="orange">This is a fourth paragraph</p>
+            <h6 class="orange">This is a h6 heading</h6>
+        <!--Div Divisions-->
+        <div class="circlebox">
+        <!--Span-->
+            <p>Div 1 <span class="different">This text different</span></p>
+        </div>
+        <div class="yellowbox">
+            <p>Div 2</p>
+        </div>
+        <div class="greenbox">
+            <p>Div 3</p>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="redbox">
+            <p>Div 4 <span class="different2">This text is different</span></p>
+        </div>
+        <div class="purplebox">
+            <p>Div 3</p>
+            Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+        </div>
+        <br>
+        <div class="pinkbox">
+            <p>Div 4</p>
+            Text Text Text Text Teeeeeeeeeeeext Text Text Text Text Text Text Text Text Text Text Text
+        </div>
+        <br>
+        <img id="one">
+        <img class="imageone" src="image.jpg">
+        <br><br>
+        <p>List</p>
+        <ul class="listone">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+        <p>List Two</p>
+        <ul class="listtwo">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+        <br>
+        <div class="divone">
+            <p><a href="google.com">Div One</a></p>
+        </div>
+        <div class="divtwo">
+            <p><a href="google.com">Div Two</a></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="divthree">
+            <p><a href="google.com">Div Three</a></p>
+        </div>
+    </body>
+</html>
