@@ -1,0 +1,19 @@
+# don't put these files onto GIT must be backed up and updated separately
+# A * ensures that everything will be ignored.
+#*
+
+# You can whitelist files/folders with !, these will not be ignored.
+!.gitignore
+
+
+# Ignore folders.
+
+
+# Ensure these files are ignored, otherwise your secret data/credentials will leak.
+
+
+# just not important
+[Hh]ello.* 
+
+# ensure .DS_Store files are ignored
+.DS_Store
