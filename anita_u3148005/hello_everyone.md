@@ -1,4 +1,4 @@
 # Hello everyone
 ## written by *Anita Heleta* - u3148005 
 
-This is a new line
+#I am studying Web Design & Production.  My home town is Adelaide. I like to travel! 
