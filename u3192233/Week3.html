@@ -5,9 +5,28 @@
         <p>More text</p>
         <!-- Creating a pop-up window on load of the webpage -->
         <script>
-            for(var i = 0; i < 10; i++) {
-                document.write("hello " + i + "<br>");
+            
+            var grade = 0;
+            document.write("Entering switch block<br />");
+            switch (grade) {
+               case 1: document.write("Good job<br />");
+               break;
+            
+               case 2: document.write("Pretty good<br />");
+               break;
+            
+               case 3: document.write("Passed<br />");
+               break;
+            
+               case 4: document.write("Not so good<br />");
+               break;
+            
+               case 5: document.write("Failed<br />");
+               break;
+            
+               default:  document.write("Unknown grade<br />")
             }
+            document.write("Exiting switch block");
         </script>
     </body>
 </html>
