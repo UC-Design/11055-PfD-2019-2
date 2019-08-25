@@ -1,0 +1,19 @@
+road1 = RED
+road2 = RED
+
+DO
+    road1 = GREEN
+    wait (2 minutes)
+LOOP WHILE pressurePadRoad2 = FALSE
+
+IF pressurePadRoad2 = TRUE AND pressurePadRoad1 = FALSE
+    THEN
+        road1 = ORANGE
+        wait (5 seconds)
+        road1 = RED
+
+IF pressurePadRoad1 = TRUE AND pressurePadRoad2 = FALSE
+    THEN
+        road2 = ORANGE
+        wait (5 seconds)
+        road2 = RED
