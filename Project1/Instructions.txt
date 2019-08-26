@@ -1,0 +1,23 @@
+Basic programming sketchIn this project you will use your newfound programming skills to create a self portrait in p5.js.
+
+The format of the sketch is up to you - it might a literal or abstract representation - using typography, lines or shapes. 
+
+Full details of the assessment item will be available on Canvas.
+
+Submission
+
+Project will include the following:
+Flow chart(s) detailing what your program will do.
+Set of pseudo-code detailing what how your program will operate.
+HTML file(s) that allows your application to be interacted with.
+JavaScript file(s) that  contain the code for your application.
+
+To be submitted on GitHub, in the ./Project1/[your student number] directory structure
+
+Assessment criteria
+
+Application of basic programming techniques.
+Creative interpretation of the brief.
+Quality and clarity of the code, including formatting and consistency.
+Visual presentation and communication.
+Ability to explain your approach, demonstrated through comments in your code, flow charts and pseudo-code and a final reflection on the work.
