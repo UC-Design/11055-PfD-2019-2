@@ -1,1 +1,23 @@
 Here the are the steps for tidying up our repository.
+
+*******
+
+Make sure you commit and push all your changes into your branch.
+
+Complete a pull-request with all your current changes.
+
+**** Once I have actioned the pull-request
+
+Switch to the master branch and pull origin (this will bring the full master branch onto your machine)
+
+Stay in the master branch
+
+Move your current working directory into the Exercises folder
+
+Commit your changes (in the master branch)
+
+Push Origin
+
+********
+
+You can now switch back to your branch
