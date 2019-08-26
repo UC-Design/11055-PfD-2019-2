@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Pages</h1>
+<p>My first paragraph</p>
+
+<script>
+
+    var person = prompt("Please enter your name", "Harry Potter");
+    var txtr = "";
+    
+        if (person == null || person == ""){
+            txtr = "User cancelled the prompt.";
+        } else {
+            txtr = myFirstFunction(person);
+        }
+        document.write(txtr);
+        
+        function myFirstFunction (name) {
+            var txt = "hello" + name + ", have a great day!";
+            return txt;
+        }
+        
+</script>
+
+</body>   
+</html>
