@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>MyFirstWebPage</h1>
+<p>MyFirstParagraph.</p>
+
+<script>
+//window.alert("Hello World");
+document.write("Hello World Again <br>");
+</script>
+
+</body>
+</html>
