@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Week 4</h1>
+    <p>Arrays, functions & objects</p>
+
+    <script>
+    /// variables
+    var person = prompt("Please enter your name", "Hairy Otters");
+    var txtr = "";
+   
+    /// if else statement    
+        if (person == null || person ==""){
+            txtr = "User cancelled the prompt.";
+        }
+        else {
+            txtr = myFirstFunction(person);
+        }
+        
+        document.write(txtr);
+        
+    /// function test    
+        function myFirstFunction(name){
+            var txt = "Hello " + name +  ", have a great day!";
+            return txt;
+        }
+        
+    </script>
+
+    
+</body>
+</html>
