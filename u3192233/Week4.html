@@ -4,12 +4,19 @@
         <h1>Another Webpage</h1>
         <p>More text</p>
         <script>
-            var helloArray = ["Hello", "World", "How", "Are", "You", "Today"];
-            window.alert(helloArray[3] + " " + helloArray[1] + "!");
-            for (var i = 0; i < helloArray.length; i++) {
-                document.write(" " + helloArray[i]);
+            var person = prompt ("Please enter your name", "Harry Potter");
+            var txtr = "";
+            if (person == null || person ==""){
+                txtr = "User cancelled the prompt";
             }
-            document.write("?");
+            else {
+                txtr = function1(person);
+            }
+            document.write(txtr);
+            function function1(name){
+                var txt = "Hello " + name + ", have a great day!";
+                return txt;
+            }
         </script>
     </body>
 </html>
