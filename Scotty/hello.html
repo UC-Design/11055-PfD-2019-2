@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>My First Webpage</h1>
+    <p>My first paragraph.</p>
+
+    <script>
+        var text = " was your number!";
+        var count = 1;
+
+        //Asks the user to input a a name and number
+        var username = window.prompt("Please enter your name:", );
+        var userinput = window.prompt("Enter a number: ", );
+
+        //This counts to users number and prints on page it has counted
+
+        while (count < userinput) {
+            document.write(count + " is the number <br>");
+            count++;
+        }
+
+        //Displays a pop up window with the users number and that it has been counted
+        window.alert(userinput + text);
+        document.write("Thanks for playing " + username + "<br>");
+        document.write(userinput + " Was your number. <br>");
+
+    </script>
+</body>
+
+</html>
