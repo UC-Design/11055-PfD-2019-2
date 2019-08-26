@@ -2,8 +2,6 @@ Basic programming sketchIn this project you will use your newfound programming s
 
 The format of the sketch is up to you - it might a literal or abstract representation - using typography, lines or shapes. 
 
-Full details of the assessment item will be available on Canvas.
-
 Submission
 
 Project will include the following:
