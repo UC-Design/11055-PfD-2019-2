@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>List names</title>
+    </head>
+    <body>
+        
+        <h1>Hello Name</h1>
+        
+        <p>Hi. This is my first list of names</p>
+
+        <script>
+        
+            var person=prompt('Please enter your name', 'Harry Potter');
+            var txtr=" ";
+            
+            if (person==null || . person==" "){
+                txtr='user cancelled the prompt.';
+            }else{
+                txtr=myFirstFunction(person);
+            }
+            document.write(txtr);
+            
+            function myFirstFunction(name){
+                var txt='Hello'+name+',have a gret day!';
+                return txt;
+            }
+            
+        </script>
+        
+    </body>
+</html>
