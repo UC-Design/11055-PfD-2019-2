@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="trafficLight.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var r1_light = 3;
+      var r2_light = 3;
+      var red = "red";
+      var amber = "amber";
+      var green = "green";
+      var question = "<br>";
+
+      for (var t = 1; t < 5; t++) {
+        switch (r1_light) {
+          case 1:
+            text = "Road 1 light " + green;
+            r2_light = 3;
+            r1_light = 1;
+            break;
+          case 2:
+            text = "Read 1 light " + amber;
+            r2_light = 2;
+            r1_light = 2;
+            break;
+          case 3:
+            text = "Road 1 light " + red;
+            r2_light = 1;
+            r1_light = 3;
+        }
+        document.write(text + question);
+        switch (r2_light) {
+          case 1:
+            texts = "Road 2 light " + green;
+            r1_light = 3;
+            r2_light = 1;
+            break;
+          case 2:
+            texts = "Read 2 light " + amber;
+            r1_light = 2;
+            r2_light = 2;
+            break;
+          case 3:
+            texts = "Road 2 light " + red;
+            r1_light = 1;
+            r2_light = 3;
+        }
+        document.write(texts + quesion);
+      }
+    </script>
+  </body>
+</html>
