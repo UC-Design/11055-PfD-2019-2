@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+</body>
+</html>
+
+<h1>Welcome</h1>
+<p>To Hogwarts</p>
+
+<script>
+    var person = prompt("Please Enter Your Name", "Harry Potter");
+    var txtr = "";
+    var txt = "86";
+        
+        //document.write(person);
+        if(person == null || person == "") {
+            txtr = "User cancelled the prompt.";
+        } else {
+            //document.write(" in " + txtr);
+            txtr = myFirstFunction(person, "7");
+            //document.write(txtr);
+            
+        }
+    
+        document.write(txtr);
+        document.write(txt);
+    
+    function myFirstFunction(name, width) {
+        //document.write(name);
+        var txt = "Hello " + name + ", have a great day!";
+        document.write(width);
+        return txt;
+    }
+
+</script>
+
+</body>
+</html>
