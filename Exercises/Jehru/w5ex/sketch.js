@@ -29,6 +29,7 @@ if(mouseIsPressed) {
     }  
 }
 
+//doesnt work yet :(
 function keyTyped() {
     if (key === 'g') {
         fill("green");
@@ -44,6 +45,6 @@ function keyTyped() {
     }
 
 }
-
+keyTyped();
 }
 
