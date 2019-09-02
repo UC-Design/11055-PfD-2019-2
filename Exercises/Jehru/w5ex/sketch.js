@@ -18,24 +18,32 @@ if(mouseIsPressed) {
     if (mouseButton === LEFT) {
         fill("green");
         circle(300, 80, 70);
-    } else {
-        //noFill();
-    }
-
-   if(mouseButton === RIGHT) {
+    } else if (mouseButton === RIGHT){
         fill("orange");
         circle(300, 170, 70);
-    } else {
-        //noFill();
-    } 
-    
-    if(mouseButton === CENTER) {
+    } else if (mouseButton === CENTER){
         fill("red");
         circle (300, 260, 70);
     }else {
-        //noFill();
-    }
-    
+        noFill();
+    }  
 }
+
+function keyTyped() {
+    if (key === 'g') {
+        fill("green");
+        circle(300, 80, 70);
+    } else if (key === 'o') {
+        fill("orange");
+        circle(300, 170, 70);
+    }else if (key === 'r') {
+        fill("red");
+        circle (300, 260, 70);
+    } else {
+        noFill();
+    }
+
+}
+
 }
 
