@@ -8,10 +8,29 @@
   </head>
   <body>
     <script>
-      var helloarray = ["Hello", "World", "How", "Are", "You", "Today"];
-      for (var i = 0; i < helloarray.length; i++) {
-        document.write(helloarray[i] + "<br>");
+      var helloArray = [
+        "Hello",
+        "world",
+        "how",
+        "are",
+        "you",
+        "today",
+        "tonight"
+      ];
+      var d = new Date();
+
+      if (d.getHours() >= 18) {
+        helloArray[5] = "";
+      } else {
+        helloArray.pop();
       }
+      for (var x = 0; x < helloArray.length; x++) {
+        document.write(helloArray[x]);
+        if (helloArray.length - 1 != x) {
+          document.write(" ");
+        }
+      }
+      document.write("?");
     </script>
   </body>
 </html>
