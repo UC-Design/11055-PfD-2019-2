@@ -7,6 +7,17 @@ function draw() {
   hairOutline();
   beardOutline();
   facialFeatures();
+  moOutline();
+  earDetail();
+  leftEye();
+  leftPupil();
+  rightEye();
+  rightPupil();
+  leftEyebrow();
+  rightEyebrow();
+  moustache();
+  hair();
+  // hairOutline();
 }
 
 function faceOutline() {
@@ -178,8 +189,8 @@ function beardOutline() {
   endShape();
 }
 
-function facialFeatures() {
-  beginShape();
+function facialFeatures() { //draws feautures of my face
+  beginShape();             //including eyebrows
   curveVertex(458,353);
   curveVertex(456,361);
   curveVertex(453,367);
@@ -415,5 +426,322 @@ function facialFeatures() {
   curveVertex(282,542);
   curveVertex(270,542);
   curveVertex(260,544);
+  endShape();
+}
+
+function moOutline() {  //draws the moustache outline
+  beginShape();
+  curveVertex(340,527);
+  curveVertex(356,524);
+  curveVertex(372,514);
+  curveVertex(392,504);
+  curveVertex(406,503);
+  curveVertex(416,509);
+  curveVertex(426,518);
+  curveVertex(434,526);
+  curveVertex(435,539);
+  curveVertex(432,549);
+  curveVertex(426,552);
+  curveVertex(420,551);
+  curveVertex(412,538);
+  curveVertex(405,530);
+  curveVertex(397,526);
+  curveVertex(388,526);
+  curveVertex(367,533);
+  curveVertex(356,534);
+  curveVertex(344,534);
+  curveVertex(330,534);
+  curveVertex(315,533);
+  curveVertex(302,534);
+  curveVertex(291,537);
+  curveVertex(279,540);
+  curveVertex(270,546);
+  curveVertex(262,550);
+  curveVertex(250,552);
+  curveVertex(240,550);
+  curveVertex(236,540);
+  curveVertex(238,529);
+  curveVertex(248,522);
+  curveVertex(260,518);
+  curveVertex(278,514);
+  curveVertex(294,516);
+  curveVertex(310,520);
+  curveVertex(328,524);
+  curveVertex(340,527);
+  curveVertex(356,524);
+  curveVertex(372,514);
+  endShape();
+}
+
+function earDetail() {  // draws the ear detail
+beginShape();
+curveVertex(185,590);
+curveVertex(130,418);
+curveVertex(131,423);
+curveVertex(128,426);
+curveVertex(123,425);
+curveVertex(121,421);
+curveVertex(116,419);
+curveVertex(112,420);
+curveVertex(112,426);
+curveVertex(112,432);
+curveVertex(114,438);
+curveVertex(117,446);
+curveVertex(120,455);
+curveVertex(121,464);
+curveVertex(122,470);
+curveVertex(125,475);
+curveVertex(130,476);
+curveVertex(136,473);
+curveVertex(138,464);
+curveVertex(138,455);
+curveVertex(137,446);
+curveVertex(137,437);
+curveVertex(260,420);
+endShape();
+}
+
+function leftEye() {
+  beginShape();
+  curveVertex(214,413);
+  curveVertex(217,421);
+  curveVertex(225,425);
+  curveVertex(234,426);
+  curveVertex(244,422);
+  curveVertex(247,412);
+  curveVertex(244,402);
+  curveVertex(237,399);
+  curveVertex(228,399);
+  curveVertex(220,400);
+  curveVertex(215,406);
+  curveVertex(214,413);
+  curveVertex(217,421);
+  curveVertex(225,425);
+  endShape();
+}
+
+function leftPupil() {
+  circle(233,410,13);
+}
+
+function rightEye() {
+  beginShape();
+  curveVertex(382,394);
+  curveVertex(381,402);
+  curveVertex(380,412);
+  curveVertex(384,416);
+  curveVertex(392,418);
+  curveVertex(400,418);
+  curveVertex(409,416);
+  curveVertex(412,409);
+  curveVertex(413,400);
+  curveVertex(409,394);
+  curveVertex(401,392);
+  curveVertex(393,392);
+  curveVertex(382,394);
+  curveVertex(381,402);
+  curveVertex(380,412);
+  endShape();
+}
+
+function rightPupil() {
+  circle(395,403,13);
+}
+
+function leftEyebrow() {
+  beginShape();
+  curveVertex(183,372);
+  curveVertex(180,370);
+  curveVertex(189,370);
+  curveVertex(186,364);
+  curveVertex(196,366);
+  curveVertex(194,359);
+  curveVertex(205,366);
+  curveVertex(200,353);
+  curveVertex(213,364);
+  curveVertex(210,350);
+  curveVertex(224,365);
+  curveVertex(219,350);
+  curveVertex(234,368);
+  curveVertex(229,350);
+  curveVertex(246,372);
+  curveVertex(240,350);
+  curveVertex(260,373);
+  curveVertex(259,356);
+  curveVertex(272,372);
+  curveVertex(271,356);
+  curveVertex(276,374);
+  endShape();
+}
+
+function rightEyebrow() {
+  beginShape();
+  curveVertex(436,365);
+  curveVertex(441,364);
+  curveVertex(436,358);
+  curveVertex(438,353);
+  curveVertex(422,362);
+  curveVertex(432,348);
+  curveVertex(413,361);
+  curveVertex(425,343);
+  curveVertex(405,362);
+  curveVertex(417,341);
+  curveVertex(398,360);
+  curveVertex(404,346);
+  curveVertex(385,364);
+  curveVertex(394,347);
+  curveVertex(378,366);
+  curveVertex(387,347);
+  curveVertex(369,372);
+  curveVertex(374,353);
+  curveVertex(356,375);
+  curveVertex(360,353);
+  curveVertex(350,369);
+  endShape();
+}
+
+function moustache() {
+  beginShape();
+  curveVertex(247,546);
+  curveVertex(254,524);
+  curveVertex(253,544);
+  curveVertex(261,525);
+  curveVertex(259,539);
+  curveVertex(274,522);
+  curveVertex(270,538);
+  curveVertex(284,522);
+  curveVertex(281,536);
+  curveVertex(293,522);
+  curveVertex(291,532);
+  curveVertex(299,523);
+  curveVertex(298,531);
+  curveVertex(305,524);
+  curveVertex(305,532);
+  curveVertex(313,525);
+  curveVertex(316,531);
+  curveVertex(320,527);
+  curveVertex(327,531);
+  curveVertex(336,529);
+  curveVertex(345,532);
+  curveVertex(352,528);
+  curveVertex(360,531);
+  curveVertex(360,526);
+  curveVertex(366,529);
+  curveVertex(366,523);
+  curveVertex(375,527);
+  curveVertex(373,519);
+  curveVertex(382,524);
+  curveVertex(379,516);
+  curveVertex(389,523);
+  curveVertex(387,509);
+  curveVertex(395,520);
+  curveVertex(396,509);
+  curveVertex(403,523);
+  curveVertex(404,510);
+  curveVertex(406,523);
+  curveVertex(410,515);
+  curveVertex(412,527);
+  curveVertex(416,518);
+  curveVertex(417,535);
+  curveVertex(422,522);
+  curveVertex(424,546);
+  curveVertex(428,528);
+  curveVertex(429,539);
+  endShape();
+}
+
+function hair() {
+  beginShape();
+  curveVertex(133,397);
+  curveVertex(126,371);
+  curveVertex(134,377);
+  curveVertex(125,344);
+  curveVertex(134,354);
+  curveVertex(125,318);
+  curveVertex(140,342);
+  curveVertex(129,296);
+  curveVertex(140,316);
+  curveVertex(134,280);
+  curveVertex(146,290);
+  curveVertex(142,297);
+  curveVertex(139,264);
+  curveVertex(150,274);
+  curveVertex(148,284);
+  curveVertex(146,251);
+  curveVertex(156,271);
+  curveVertex(148,230);
+  curveVertex(161,258);
+  curveVertex(149,200);
+  curveVertex(165,250);
+  curveVertex(157,185);
+  curveVertex(169,241);
+  curveVertex(168,173);
+  curveVertex(174,234);
+  curveVertex(176,170);
+  curveVertex(182,224);
+  curveVertex(182,224);
+  curveVertex(183,162);
+  curveVertex(190,217);
+  curveVertex(192,156);
+  curveVertex(198,214);
+  curveVertex(201,154);
+  curveVertex(205,212);
+  curveVertex(210,150);
+  curveVertex(214,210);
+  curveVertex(221,146);
+  curveVertex(223,205);
+  curveVertex(234,142);
+  curveVertex(233,200);
+  curveVertex(244,139);
+  curveVertex(242,196);
+  curveVertex(254,135);
+  curveVertex(252,195);
+  curveVertex(265,132);
+  curveVertex(260,194);
+  curveVertex(275,133);
+  curveVertex(270,192);
+  curveVertex(285,134);
+  curveVertex(281,190);
+  curveVertex(295,134);
+  curveVertex(290,188);
+  curveVertex(305,133);
+  curveVertex(298,187);
+  curveVertex(317,130);
+  curveVertex(310,185);
+  curveVertex(332,126);
+  curveVertex(322,182);
+  curveVertex(344,123);
+  curveVertex(332,182);
+  curveVertex(359,124);
+  curveVertex(344,184);
+  curveVertex(372,126);
+  curveVertex(355,186);
+  curveVertex(385,133);
+  curveVertex(365,189);
+  curveVertex(401,141);
+  curveVertex(374,194);
+  curveVertex(412,149);
+  curveVertex(385,200);
+  curveVertex(421,158);
+  curveVertex(393,205);
+  curveVertex(428,172);
+  curveVertex(400,209);
+  curveVertex(435,180);
+  curveVertex(408,215);
+  curveVertex(443,189);
+  curveVertex(413,220);
+  curveVertex(449,199);
+  curveVertex(419,224);
+  curveVertex(439,214);
+  curveVertex(426,227);
+  curveVertex(437,225);
+  curveVertex(428,241);
+  curveVertex(445,244);
+  curveVertex(434,255);
+  curveVertex(448,260);
+  curveVertex(444,272);
+  curveVertex(454,278);
+  curveVertex(448,290);
+  curveVertex(454,300);
   endShape();
 }
