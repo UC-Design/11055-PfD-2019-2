@@ -17,6 +17,7 @@ function draw() {
   rightEyebrow();
   moustache();
   hair();
+  beard();
   // hairOutline();
 }
 
@@ -502,6 +503,7 @@ endShape();
 }
 
 function leftEye() {
+  fill(77, 51, 0, 200);
   beginShape();
   curveVertex(214,413);
   curveVertex(217,421);
@@ -518,13 +520,17 @@ function leftEye() {
   curveVertex(217,421);
   curveVertex(225,425);
   endShape();
+  noFill();
 }
 
 function leftPupil() {
+  fill(0,0,0);
   circle(233,410,13);
+  noFill();
 }
 
 function rightEye() {
+  fill(77, 51, 0, 200);
   beginShape();
   curveVertex(382,394);
   curveVertex(381,402);
@@ -542,10 +548,13 @@ function rightEye() {
   curveVertex(381,402);
   curveVertex(380,412);
   endShape();
+  noFill();
 }
 
 function rightPupil() {
+  fill(0,0,0);
   circle(395,403,13);
+  noFill();
 }
 
 function leftEyebrow() {
@@ -651,6 +660,7 @@ function moustache() {
 }
 
 function hair() {
+  noFill();
   beginShape();
   curveVertex(133,397);
   curveVertex(126,371);
@@ -743,5 +753,62 @@ function hair() {
   curveVertex(454,278);
   curveVertex(448,290);
   curveVertex(454,300);
+  endShape();
+}
+
+function beard() {
+  noFill();
+  beginShape();
+  curveVertex(145,478);
+  curveVertex(146,512);
+  curveVertex(153,506);
+  curveVertex(155,526);
+  curveVertex(161,522);
+  curveVertex(166,552);
+  curveVertex(170,545);
+  curveVertex(178,569);
+  curveVertex(184,562);
+  curveVertex(187,589);
+  curveVertex(192,578);
+  curveVertex(198,603);
+  curveVertex(204,595);
+  curveVertex(211,617);
+  curveVertex(215,612);
+  curveVertex(220,631);
+  curveVertex(226,625);
+  curveVertex(234,647);
+  curveVertex(243,644);
+  curveVertex(250,662);
+  curveVertex(258,661);
+  curveVertex(265,671);
+  curveVertex(277,675);
+  curveVertex(283,683);
+  curveVertex(300,683);
+  curveVertex(311,692);
+  curveVertex(324,686);
+  curveVertex(333,694);
+  curveVertex(349,685);
+  curveVertex(360,692);
+  curveVertex(370,677);
+  curveVertex(383,679);
+  curveVertex(394,663);
+  curveVertex(404,666);
+  curveVertex(413,642);
+  curveVertex(416,648);
+  curveVertex(422,628);
+  curveVertex(428,631);
+  curveVertex(433,612);
+  curveVertex(439,610);
+  curveVertex(440,599);
+  curveVertex(444,600);
+  curveVertex(446,589);
+  curveVertex(452,584);
+  curveVertex(453,576);
+  curveVertex(458,572);
+  curveVertex(459,564);
+  curveVertex(465,557);
+  curveVertex(466,547);
+  curveVertex(470,541);
+  curveVertex(472,532);
   endShape();
 }
