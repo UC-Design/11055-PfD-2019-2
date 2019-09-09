@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Functions</h1>
+        
+        <script>
+        var person = prompt("please enter your name", "Harry Potter");
+        var txtr = "";
+            //we are creating a variable called person, which is a prompt. the prompt is a function, the first item in the function is the message ti display, the second is the value. like a popup form.
+            //and we have created the variable that will be the response??
+            // if the user doesn't type anything, or cancels the prompt we get the following.
+            if (person == null || person == "") {
+                txtr = "user has cancelled prompt.";
+            } else {
+                txtr = myFirstFunction(person);
+            }
+            //if the person has put something in the prompt, it the function into the txtr var. and then writes it to screen.
+                document.write(txtr);
+
+                
+                function myFirstFunction(name) {
+                    var txt = "Hello " + name + ", have a great day!";
+                    return txt; 
+                }
+            //so this is the function. we have created a function called myfirstfunction, and the funciton contains a name- i think, not sure exactly what the 'name'is for. and what the function does is it takes the hello and the name, and the last bit and adds them together and brings it back to you.  
+            //the else is taking the function, and assigning the value that was inputted as the  'name'variable in the function, so then the function takes what was inputted and adds it up and returns it to you. and then since we've called the funciton a txtr variable, we can just print it to screen. 
+        </script>
+    
+    </body>
+</html>

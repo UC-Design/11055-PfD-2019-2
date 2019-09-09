@@ -1,0 +1,22 @@
+String light_one = "Red";
+String light_two = "Green";
+Boolean pedestrians_waiting_one;
+Boolean pedestrians_waiting_two;
+Boolean cars_waiting_one;
+Boolean cars_waiting_two;
+
+DO
+        wait 2 seconds
+IF 
+        pedestrians_waiting = "true";
+THEN 
+        wait (5 minutes)
+        change light!
+ELSE IF
+        cars_waiting = "true";
+THEN
+        wait (5 minutes)
+        change light!
+LOOP
+
+

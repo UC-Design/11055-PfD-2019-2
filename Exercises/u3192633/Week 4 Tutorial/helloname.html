@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hello Name</title>
+  </head>
+  <body>
+    <script>
+      var person = prompt("Plaese enter your name", "Harry Potter");
+      var txtr = "";
+
+      if (person == null || person == "") {
+        txtr = "User cancelled the prompt.";
+      } else {
+        txtr = myHundrethFunction(person);
+      }
+      document.write(txtr);
+
+      function myHundrethFunction(name) {
+        var txt = "Hello " + name + ", have a great day!";
+        return txt;
+      }
+    </script>
+  </body>
+</html>

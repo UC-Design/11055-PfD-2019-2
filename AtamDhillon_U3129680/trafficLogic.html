@@ -1,0 +1,37 @@
+<!Doctype html>
+
+<html>
+<body>
+    <h1>My First Web Page</h1>
+        <p>My First Paragraph.</p>
+    
+    <p>Click on button below to manage the car traffic today. <br>
+        <input type="button" value="Manage Car Traffic at Lights" onclick="manageTraffic()" />
+        
+        
+    </p>
+
+    <script>
+       // window.alert("Hello World");
+        document.write("Hello World Again, let's check the weather today");
+        
+        var carApproached;
+        
+        function manageTraffic() {
+            //alert("It's Working");
+            carApproached = prompt("Please enter current temperature.");
+            if (carApproached == "yes") {
+                alert("The car is here is advised to be " + carApproached + " let the light be Green");
+            }
+            else {
+                alert("The car is not here yet, check back in 5 seconds");
+            }
+        }
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>
