@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h1>Simple traffic light</h1>
+        
+        
+        <script>
+        
+           var r1light = 3;
+           var r2light = 3; 
+            var htmlbr = "<br>";
+            var text "";
+            
+            for(var lp = 1; lp < 15; lp++) {
+                switch(r1light) {
+                    case 1: 
+                        //if the road 1 light is 1 which is green then the road 2 light is red. and we turn the road 1 light orange. so we are going from green to orange on road 1 while road 2 is red, while we do this. 
+                        text = "road 1 light is green";
+                        r2light = 3;
+                        r1light = 2;
+                        break;
+                    case 2: 
+                        //if the road 1 light is orange (which it will be if we just did the last one- then road 2 light stays red while it is orange to give time to straglers, and road 1 gets turned to red. so we are going from orange to red on road 1 and now everybody is stopped.
+                        text = "road 1 light is orange";
+                        r2light = 3;
+                        r1light = 3;
+                        break; 
+                    case 3: 
+                        //if the road 1 light is red, which it is to start with. we can turn the road 2 light green, and we are keeping the road 1 light red. so we are letting road 2 go through. now road 2 is green and road 1 is stopped, but we have to get it back to the start. so we do it with another swtich, which makes sense, but i don't think i would have figured that step out on my own.
+                        text = "road 1 light is red";
+                        r2light = 1;
+                        r1light = 3;
+                }
+                
+                document.write(text + htmlbr)
+                
+                switch(r2light){
+                    case 1: 
+                        //in the road 2 light is green, which it is right now. we need to turn it orange. while the road 1 stays red. 
+                        text = "road 2 light is green";
+                        r1light = 3; 
+                        r2light = 2;
+                        break;
+                    case 2: 
+                        //if the road 2 ligt is orange we need to turn it red and keep road 1 on red for a moment to get stragglers off the road. 
+                        text = "road 2 light is orange";
+                        r1light = 3; 
+                        r2light = 3; 
+                        break; 
+                    case 3: 
+                        //if road 2 light is red then we can turn the road 1 light back to green. and road 2 stays red. 
+                        text = "road 2 light is red";
+                        r1light = 1;
+                        r2light = 3;
+                        
+                        
+                }
+            }
+            //do i need to put something to close the for loop?
+            
+            
+            
+            
+           // var light1 = "green";
+            //var light2 = "red";
+            //var traffic = false;
+            
+           // while (traffic == false) {
+             //   document.write("No traffic. Light is " + light2 + "<br> Waiting 5 seconds");
+                //i would like to put a 5 second count timer in here, but...
+                
+            }
+           // document.write("waiting 2 mins");
+          //  var light1 = "orange"; 
+           // document.write("Light 1 is " + light1);
+           // document.write("waiting 30 seconds");
+           // var light1 = "red";
+           // document.write("Light 1 is " + light1);
+           // document.write("waiting 3 seconds");
+           // var light2 = "green";
+           // document.write("waiting 2 mins");
+           // var light2 = "orange";
+           // document.write("waiting 30 seconds");
+           // var light2 = "red"; 
+           // document.write("waiting 3 seconds");
+           // var light1 = "green";
+
+        </script>
+        
+    </body>
+</html>

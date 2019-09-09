@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <h1>Simple traffic light</h1>
+        
+        
+        <script>
+        
+        var r1light = 3;
+        var r2light = 3; 
+        var htmlbr = "<br>";
+        var text = "";
+            
+         for (var lp = 1; lp < 15; lp++) {
+                switch (r1light) {
+                    case 1: 
+                        //if the road 1 light is 1 which is green then the road 2 light is red. and we turn the road 1 light orange. so we are going from green to orange on road 1 while road 2 is red, while we do this. 
+                        text = "road 1 light is green";
+                        r2light = 3;
+                        r1light = 2;
+                        break;
+                    case 2: 
+                        //if the road 1 light is orange (which it will be if we just did the last one- then road 2 light stays red while it is orange to give time to straglers, and road 1 gets turned to red. so we are going from orange to red on road 1 and now everybody is stopped.
+                        text = "road 1 light is orange";
+                        r2light = 3;
+                        r1light = 3;
+                        break; 
+                    case 3: 
+                        //if the road 1 light is red, which it is to start with. we can turn the road 2 light green, and we are keeping the road 1 light red. so we are letting road 2 go through. now road 2 is green and road 1 is stopped, but we have to get it back to the start. so we do it with another swtich, which makes sense, but i don't think i would have figured that step out on my own.
+                        text = "road 1 light is red";
+                        r2light = 1;
+                        r1light = 3;
+                        break;
+                }
+                
+                document.write(text + htmlbr);
+                
+                switch (r2light) {
+                    case 1: 
+                        //in the road 2 light is green, which it is right now. we need to turn it orange. while the road 1 stays red. 
+                        text = "road 2 light is green";
+                        r2light = 2; //we get to here and this one isn't working neither is anything else
+                        r1light = 3;
+                        break;
+                    case 2: 
+                        //if the road 2 ligt is orange we need to turn it red and keep road 1 on red for a moment to get stragglers off the road. 
+                        text = "road 2 light is orange";
+                        r2light = 3; 
+                        r1light = 3; 
+                        break; 
+                    case 3: 
+                        //if road 2 light is red then we can turn the road 1 light back to green. and road 2 stays red. 
+                        text = "road 2 light is red";
+                        r2light = 3;
+                        r1light = 1;
+                        break;
+                        
+                        
+                }
+                document.write(text + htmlbr);
+           }
+      
+        </script>
+        
+    </body>
+</html>

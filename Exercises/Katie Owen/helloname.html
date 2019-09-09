@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <script>
+    
+    var person = prompt('Please Enter Your Name', 'Harry Potter');
+    var txtr = "";
+
+    if (person == null || person == ""){
+        txtr = 'User cancelled the prompt.';
+    } else {
+        txtr = myFirstFunction(person);
+    }
+    document.write(txtr);
+
+    function myFirstFunction (name) {
+        var txt = 'Hello' + " " + name + ', have a great day!';
+        return txt;
+    }
+    </script>
+</html>

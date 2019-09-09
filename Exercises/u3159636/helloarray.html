@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+         
+        <h1>Hello Array</h1>
+        
+        <script>
+           /*var helloarray = ["Hello", "World", "How", "Are", "You", "Today"];
+            window.alert(helloarray[0]+""+helloarray[1]+"!");
+            for(var i=0; i<helloarray.length; i++){
+                document.write(helloarray[i]+"<br>");
+            }*/
+            
+            var person = prompt('Please enter your name', 'Harry Potter');
+            var txtr = "";
+            
+            if(person==null||person==""){
+                txtr = 'User cancelled the prompt';
+            }else{
+                txtr = myFirstFunction(person);
+            }
+            document.write(txtr);
+            
+            function myFirstFunction(name){
+                var txt ='Hello ' +name + ', have a great day!';
+                return txt;
+            }
+        </script>
+        
+    </body>
+</html>

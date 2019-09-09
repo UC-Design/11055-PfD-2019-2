@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<script>
+
+
+  var r1_light = 3;
+  var r2_light = 3;
+  var lc_red = "red";
+  var lc_yel = "yellow";
+  var lc_gre = "green";
+  var html_br = "<br>";
+  var r1_text = "road 1 light is";
+  var r2_text = "road 2 light is";
+  var txtOut = r1_text + lc_gre; 
+
+ for (var lp = 1; lp < 15; lp++){
+        
+      switch(rl_light){      
+    case 1:
+        r1_text + lc_gre;
+        r1_light = 3;
+        r1_light = 2;
+        break;
+    case 2:
+        r1_text + lc_yel;
+        r1_light = 3;
+        r1_light = 3;
+        break;
+    case 3:
+        r1_text + lc_red;
+        r1_light = 1;
+        r1_light = 3;
+        break;                    
+      } 
+     
+     document.write(txtOut + html_br);
+    
+    switch(r2_light){    
+    case 1:
+        r2_text + lc_gre;
+        r2_light = 3;
+        r2_light = 2;
+        break;
+    case 2:
+        r2_text + lc_yel;
+        r2_light = 3;
+        r2_light = 3;
+        break;
+    case 3:
+        r2_text + lc_red;
+        r2_light = 1;
+        r2_light = 3;
+        break;         
+       }
+        document.write( + html_br);
+     }
+    
+     // if (person == null || person == ""){
+       // txtr = 'User cancelled the prompt.';
+   // }else{
+     //   txtr = myFirstFunction(person);
+   // }
+        
+   // document.write(txtr);
+        
+   // function myFirstFunction(name){
+       // var txt = 'Hello' + ' ' + name + ', have a great day!';
+       // return txt;
+   // }
+    
+    
+</script>   
+    
+    
+</body>
+</html>
