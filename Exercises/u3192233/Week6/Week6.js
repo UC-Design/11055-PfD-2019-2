@@ -4,20 +4,15 @@ function setup() {
 }
 // drawing items
 function draw() {
-//black background
     background(0);
     stroke(255);
     strokeWeight(4);
     circle(180, 360, 340);
-// create if statement for mouse press
-//    if (mouseIsPressed) {
-//        fill('yellow');
-//    } else {
-//        fill('red');
-//    }
 }
+// creating variable for light colour
 var light = 'red'
 function mouseClicked(){
+// switch case to rotate through light
     switch(light){
         case 'red':
             fill('green');
