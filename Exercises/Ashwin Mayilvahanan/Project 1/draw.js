@@ -1,8 +1,17 @@
+/*
+    Ashwin Mayilvahanan 2019 
+    Programming for Design - Project 1
+    
+    This javascript file draws a self portrait 
+    adopting a continuous line approach using the p5 library
+*/
+
 function setup() {
   createCanvas(1000,1000); // initialise the canvas
 }
 
-function draw() {
+function draw() { // function to call other functions to draw their respective features
+  scale(1.3);
   faceOutline();
   hairOutline();
   beardOutline();
@@ -18,10 +27,9 @@ function draw() {
   moustache();
   hair();
   beard();
-  // hairOutline();
 }
 
-function faceOutline() {
+function faceOutline() { // function that draws my facial outline using curveVertex vertice points
   beginShape();
   curveVertex(143,523);
   curveVertex(167,570);
@@ -109,7 +117,7 @@ function faceOutline() {
   endShape();
 }
 
-function hairOutline() {
+function hairOutline() { // function that draws my hairline outline using curveVertex vertice points
   beginShape();
   curveVertex(134,419);
   curveVertex(137,393);
@@ -141,7 +149,7 @@ function hairOutline() {
   endShape();
 }
 
-function beardOutline() {
+function beardOutline() { // function that draws my beard outline using curveVertex vertice points
   beginShape();
   curveVertex(478,502);
   curveVertex(477,512);
@@ -190,8 +198,8 @@ function beardOutline() {
   endShape();
 }
 
-function facialFeatures() { //draws feautures of my face
-  beginShape();             //including eyebrows
+function facialFeatures() { //draws features of my face including the eybrows using curveVertex vertice points with one continuous line
+  beginShape();             
   curveVertex(458,353);
   curveVertex(456,361);
   curveVertex(453,367);
@@ -417,7 +425,7 @@ function facialFeatures() { //draws feautures of my face
   curveVertex(394,534);
   curveVertex(384,536);
   curveVertex(374,538);
-  curveVertex(366,542);
+  curveVertex(366,542); 
   curveVertex(354,544);
   curveVertex(342,547);
   curveVertex(328,546);
@@ -430,7 +438,7 @@ function facialFeatures() { //draws feautures of my face
   endShape();
 }
 
-function moOutline() {  //draws the moustache outline
+function moOutline() {  // function that draws my moustache outline using curveVertex vertice points
   beginShape();
   curveVertex(340,527);
   curveVertex(356,524);
@@ -474,7 +482,7 @@ function moOutline() {  //draws the moustache outline
   endShape();
 }
 
-function earDetail() {  // draws the ear detail
+function earDetail() {  // function that draws my ear detail using curveVertex vertice points
 beginShape();
 curveVertex(185,590);
 curveVertex(130,418);
@@ -502,8 +510,8 @@ curveVertex(260,420);
 endShape();
 }
 
-function leftEye() {
-  fill(77, 51, 0, 200);
+function leftEye() {    //function that draws my left eye with a fill of brown using curveVertex vertice points
+  fill(77, 51, 0);
   beginShape();
   curveVertex(214,413);
   curveVertex(217,421);
@@ -523,14 +531,14 @@ function leftEye() {
   noFill();
 }
 
-function leftPupil() {
+function leftPupil() {  //function that draws my left pupil with a fill of black colour using a simple circle
   fill(0,0,0);
   circle(233,410,13);
   noFill();
 }
 
-function rightEye() {
-  fill(77, 51, 0, 200);
+function rightEye() {   //function that draws my right eye with a fill of brown using curveVertex vertice points
+  fill(77, 51, 0);
   beginShape();
   curveVertex(382,394);
   curveVertex(381,402);
@@ -551,13 +559,13 @@ function rightEye() {
   noFill();
 }
 
-function rightPupil() {
+function rightPupil() {   //function that draws my right pupil with a fill of black colour using a simple circle
   fill(0,0,0);
   circle(395,403,13);
   noFill();
 }
 
-function leftEyebrow() {
+function leftEyebrow() {  //function that draws my left eyebrow using curveVertex vertice points
   beginShape();
   curveVertex(183,372);
   curveVertex(180,370);
@@ -583,7 +591,7 @@ function leftEyebrow() {
   endShape();
 }
 
-function rightEyebrow() {
+function rightEyebrow() {   //function that draws my right eyebrow using curveVertex vertice points
   beginShape();
   curveVertex(436,365);
   curveVertex(441,364);
@@ -609,7 +617,7 @@ function rightEyebrow() {
   endShape();
 }
 
-function moustache() {
+function moustache() {  //function that draws my moustache using curveVertex vertice points
   beginShape();
   curveVertex(247,546);
   curveVertex(254,524);
@@ -659,7 +667,7 @@ function moustache() {
   endShape();
 }
 
-function hair() {
+function hair() {   //function that draws my hair using curveVertex vertice points
   noFill();
   beginShape();
   curveVertex(133,397);
@@ -756,7 +764,7 @@ function hair() {
   endShape();
 }
 
-function beard() {
+function beard() {  //function that draws my beard using curveVertex vertice points
   noFill();
   beginShape();
   curveVertex(145,478);
