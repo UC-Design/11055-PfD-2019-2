@@ -4,15 +4,15 @@ function setup(){
 }
 
 function draw() {
-    var hair = color(0, 0, 0);
-    var face = color(89, 60, 31);
-    var neck = color(89,60,31);
-    var lefteye = color(255);
-    var righteye = color(255);
-    var eyeballs = color (0); 
+    var hair = colour(0, 0, 0);
+    var face = colour(89, 60, 31);
+    var neck = colour(89,60,31);
+    var lefteye = colour(255);
+    var righteye = colour(255);
+    var eyeballs = colour (0); 
     var eyebrows = noFill(); 
     var nose = noFill();
-    var mouth = color (255, 105, 105);
+    var mouth = colour (255, 105, 105);
     
     //hair behind face
     noStroke(); 
