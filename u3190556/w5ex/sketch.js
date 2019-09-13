@@ -4,17 +4,12 @@ function setup(){
 function draw(){
     if (mouseIsPressed) {
         fill(0);
+        strokeWeight(4);
     }else{
         fill(326);
+        strokeWeight(0);
     }
     ellipse(mouseX, mouseY,80, 80);
 
-}
-function draw(){
-    if (mouseIsPressed){
-        strokeWeight(4);
-    }else{
-        strokeWeight(0);
-    }
-    stroke(350)
+    //stroke(350)
 }
