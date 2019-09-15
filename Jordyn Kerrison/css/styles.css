@@ -49,9 +49,58 @@ table {
 
 
 
+/*start of css document*/
+
+/*buttons*/
+.portraitbutton{
+    background-color: #94bbe2; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 300px;
+    margin-top: 300px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+.portraitbutton:hover{
+    background-color: #6794c2;
+}
+.portraitbutton:active{
+    background-color: #5f86ad;
+    color: #888888;
+}
 
 
+.backbutton {
+    background-color: #94bbe2; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+.backbutton:hover {
+    background-color: #6794c2;
+}
+.backbutton:active {
+    background-color: #5f86ad;
+    color: #888888;
+}
 
+
+/*text styles*/
+h1 {
+    color: #555555;
+    font-size: 30px;
+    margin-left: 280px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 
 
