@@ -20,7 +20,7 @@ function draw() {
     directionalLight(212, 175, 55, 0.25, 0.25, 0);
   pointLight(255, 223, 0, locX, locY, 0);
     
-    ambientMaterial(169);
+    ambientMaterial(212);
     noStroke();
     translate(0,400);
     sphere(45);
