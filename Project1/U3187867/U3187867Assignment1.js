@@ -28,6 +28,10 @@ function draw() {
 			
 			
 	} else { 
+	
+		//Check if the left Eye has not reached its min or max position, 
+		//if so reverse its movement, if not keep moving untill
+		//it it hits its min or max position
 		if(L_reverse==false)
 		{
 			if(L_EyeCurrent >L_EyeMin && L_EyeCurrent<L_EyeMax)
@@ -39,6 +43,9 @@ function draw() {
 				L_reverse=true;
 			}
 		}
+		//Check if the right Eye has not reached its min or max position, 
+		//if so reverse its movement, if not keep moving untill
+		//it it hits its min or max position
 		if(R_reverse==false)
 		{
 			
@@ -79,6 +86,7 @@ function draw() {
 			}
 		}
 		//Hands
+		//Draw the hands first to avoid clipping with the jacket later
 		fill(255, 252, 216);
 		noStroke(); 
 		rect(50, 525, 35, 20);
@@ -94,11 +102,10 @@ function draw() {
 		stroke(60,132,131);
 	
 		stroke(97,61,193);
-		//fill(97,61,193);
-		//quad(120,330,160,312,190,450,155,450);
-		//quad(400,337,350,317,375,450,400,450);
 		fill(255,255,255);
 		noStroke(); 
+		//Draw the white sleaves after drawing the initial part of the jacket
+		//to create the jacket
 		quad(49, 451, 110, 450, 135, 350,79, 349,);//arm Up left
 		quad(382, 448, 450, 449, 421, 350,362, 349,);//arm Up right
 		
@@ -132,7 +139,7 @@ function draw() {
 			
 		fill(255,255,255);
 		noStroke(); 
-		quad(79,349,134,350,	214,299,189,299);//Whie Stripe
+		quad(79,349,134,350,214,299,189,299);//Whie Stripe
 		
 		fill(255,255,255);
 		noStroke(); 
@@ -147,6 +154,7 @@ function draw() {
 		quad(384,448,449,449,457,525,395,525);//Whie Stripe
 		
 		//Left Band
+		//Draw the left band on the arm sleave, while leaving a small white gap in the middle 
 		fill(0,0,0);
 		noStroke(); 
 		quad(42,515,43,512,99,512,99,515);//Black Stripe
@@ -169,6 +177,7 @@ function draw() {
 		
 		
 		//Right Band
+		//Draw the right band on the arm sleave, while leaving a small white gap in the middle 
 		fill(0,0,0);
 		noStroke(); 
 		quad(393,515,392,512,456,512,456,514);//Black Stripe
