@@ -5,7 +5,7 @@ function setup(){
     createCanvas (400, 350);
     strokeWeight(4);               
     stroke('#013220');
-    background('#227c4e')
+    background('#227c4e');
     fill('#33b873');
     rect(20, 20, 360, 350);
 }
