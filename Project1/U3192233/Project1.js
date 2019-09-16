@@ -1,6 +1,9 @@
 // setup variables
-let bgvalue = 230
-let myName = ['Morgan', 'MORGAN', 'MoRgAn', 'Nagrom']
+// background variable
+let bgvalue = 230;
+// name array
+let myName = ['Morgan', 'MORGAN', 'MoRgAn', 'Nagrom'];
+// integer for name array
 let i = 0;
 
 // setup drawing canvas for p5.js
@@ -50,9 +53,12 @@ function draw() {
     rect(100, 480, 500, 360, 30);
 }
 
+// mouse click function
 function mouseClicked(){
+    // changing background value between 0 and 230
     if (bgvalue === 230){
         bgvalue = 0;
+        // iterating name integer to change or reset for entirity of array
         if (i < myName.length - 1){
             i++;
         } else{
