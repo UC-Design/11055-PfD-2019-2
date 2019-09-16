@@ -52,7 +52,7 @@ let xRight = 280;
 let y = 172;
 let nextSmile=0;
   
-  //facial features.
+  //facial features code below, allows you to open and close mouth of image hover over mouse in image mouth will move. leave it still in image and it won't move 
 stroke(133,138,227,100);
 strokeWeight(1.2);
 fill(222,255,240);
