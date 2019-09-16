@@ -1,12 +1,12 @@
 
-
 //Creating Canvas 640 wide and 480 long
 function setup () {
-    createCanvas(640, 480); 
-
+    createCanvas(600, 600); 
 }
 
+
 function draw(){
+
 fill(180);
 rect(250, 20, 100, 300);
 
@@ -29,6 +29,27 @@ if(mouseIsPressed) {
     }  
 }
 
+
+mouseClicked();
+
+function mouseClicked(){
+    light = "green";
+
+    if (light = "green"){
+        console.log("light = green");
+        light = "orange";
+    } else if (light = "orange") {
+        console.log("light =  orange");
+        light = "red";
+    } else if (light = "red"){
+        console.log("light = Red");
+    } else {
+        noFill();
+    }
+}
+
+
+
 //doesnt work yet :(
 function keyTyped() {
     if (key === 'g') {
@@ -45,6 +66,5 @@ function keyTyped() {
     }
 
 }
-keyTyped();
 }
 
