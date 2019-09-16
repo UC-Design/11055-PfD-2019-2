@@ -1,4 +1,5 @@
-var ball = 1
+var ballw = 20
+var ballh = 20
 
 function setup() {
     createCanvas (400, 400);
@@ -6,9 +7,12 @@ function setup() {
 }
 
 function draw() {
-
+    
     if (mouseIsPressed) {
         fill (255);
+        ellipse (mouseX, mouseY, ballw, ballh);
+        ballw++;
+        ballh++;
     }
-    ellipse (mouseX, mouseY, 80, 80);
+   
 }
