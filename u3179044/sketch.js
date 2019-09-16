@@ -7,7 +7,7 @@ function setup() {
     fill(40, 60, 104);
 
 
-    stroke(13, 89, 132);
+    stroke(13, 89, 132):
 }
 
 function draw() {
