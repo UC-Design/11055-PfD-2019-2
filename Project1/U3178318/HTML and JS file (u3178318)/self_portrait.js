@@ -41,7 +41,7 @@ function draw(){
     rect(225, 220, 50, 30);      //Draw neck//
 
     
-    //To sktech and change the colour of jacket//
+    //To sketch and change the colour of jacket//
     strokeWeight(2);
     stroke('black');
       if (a == 1){
