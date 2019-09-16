@@ -30,6 +30,7 @@
         arc(230, 350, 80, 80, 0, PI + QUARTER_PI, PIE);
         fill(51);
         arc(300, 240, 60, 60, 5, PI + QUARTER_PI);
+
 //each shape is put in order ontop of eachother to make a face.
       }
 
