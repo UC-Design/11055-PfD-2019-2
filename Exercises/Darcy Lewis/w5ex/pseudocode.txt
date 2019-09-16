@@ -1,0 +1,33 @@
+START 
+
+DO
+    Function setup Create Canvas, canvasWidth = 500, canvasHeight = 590
+
+DO 
+    Function draw self portrait  
+
+    DO
+        Draw face/ears and colour face/ears
+
+    DO 
+        Draw hair and colour hair 
+
+    DO 
+        Draw eyes/eye details/eyebrows and colour eyes/eye details/eyebrows
+
+    DO
+        Draw nose/freckles and colour nose/freckles
+
+    DO
+        Draw mouth and colour mouth 
+
+    DO
+        Draw neck/shirt and colour neck/shirt
+
+    DO
+
+        Draw earrings and colour earrings    
+
+LOOP 
+
+END
