@@ -1,3 +1,5 @@
+var glasses=0;
+
 function setup() {
   createCanvas(800, 600);
 }
@@ -15,13 +17,8 @@ function setup() {
 
 //face
 function draw(){
-//    clear();
-//    if (mouseClicked) {
-//        ellipse(10,10,10,10);
-//    } else { }
-//        
-//    
-//    
+    clear();
+    
 //hair
     fill("brown");
     noStroke();
@@ -75,24 +72,28 @@ function draw(){
     line(297, 358, 474, 358);
     line(303, 376, 466, 376);
     
+   if (glasses==1) {
+        //glasses
     
-   
+    noFill();
+    stroke("black");
+    rect(336,175,40,30,30);  //left eye  
     
+    noFill();
+    stroke("black");
+    rect(396,175,40,30,30);  //right eye
     
-    
+    line(376,190,395,190); //line between glasses
+    }  
     
     }
 
-
-// //glasses
-//    
-//    noFill();
-//    stroke("black");
-//    rect(336,175,40,30,30);  //left eye  
-//    
-//    noFill();
-//    stroke("black");
-//    rect(396,175,40,30,30);  //right eye
-//    
-//    line(376,190,395,190);
+function mouseClicked() {
+  if (glasses === 0) {
+    glasses = 1;
+  } else {
+    glasses = 0;
+  }
+}
+ 
     
