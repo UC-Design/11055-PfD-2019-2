@@ -1,0 +1,349 @@
+PROJECT 1: PSEUDO-CODE FOR PORTRAIT
+
+This program will draw a portrait using the P5 library in Javascript. 
+The eyes will also change colour on mouse press & the main figure's pupils 
+will follow the mouse cursor.
+
+---------------------------------------------------------------------------
+
+ADD VARIABLES TO SET COLOURS FOR PORTRAIT:
+
+Setting colour variables for portrait
+  E.g. 
+  var hair = '';
+  var hair_light = '';
+  var hair_dark = '';
+
+Setting colour variables for dogs
+Dog1 = FINN
+  E.g. dog colours
+  var dog1_clr ='';
+  var dog1_dark = '';
+
+Dog2 = PEGGY
+  E.g. 
+  var dog2_clr ='';
+  var dog2_dark = '';
+  
+Set variables for colour transition in dog eyes
+  var dog1_eyeclr;
+  var dog2_eyeclr;
+
+Set eyes to move with mouse cursor
+  var eye1;
+  var eye2;
+
+---------------------------------------------------------------------------
+
+SET PARAMETERS OF CANVAS
+
+Function setup(){
+
+  Setup Canvas parameters
+  
+Set dog eye colour to random for transition
+  dog1_eyeclr = random()
+  dog2_eyeclr = random()
+    
+Create eye pupils for moving eye interaction
+  eye1 = new Eye ()
+  eye2 = new Eye ()
+  
+---------------------------------------------------------------------------  
+
+CREATE BACKGROUND PATTERN & GRAPHICS
+
+E.g. If pattern1 is less than or equal to the width, then add 20 to pattern 1.
+ 
+  for (var pattern1 = 0; pattern1 <= width; pattern1 = pattern1 + 20 ){
+  for (var pattern2 = 0; pattern2 <= height; pattern2 = 20 + pattern2){
+
+Add the colours for the patterns and set what areas the pattern will cover.
+
+E.g.
+
+  Set fill 
+  Draw 20 ellipses (pattern1) and (pattern2) that are 15 by 15
+  
+  Set fill
+  Draw 20 rectangles (pattern2) and (pattern1) that are 10 by 10
+  
+  Set fill
+  Draw 20 circles (pattern2) and (pattern1) that are 10 by 10 
+  
+
+ADD OTHER BACKGROUND GRAPHICS
+  Draw rectangle 
+  Draw circle
+  Draw circle
+  Draw circle 
+  Draw circle 
+  Draw triangle 
+  Draw triangle 
+  Draw rectangle 
+  Draw rectangle 
+  
+
+SET TEXT AND ATTRIBUTES
+  Set textSize
+  Set fill
+  Place text
+
+---------------------------------------------------------------------------
+
+BEGIN DRAWING THE PORTRAIT 
+
+  Function draw () {
+
+  Remove stroke from portrait e.g. noStroke
+
+DRAW CLOTHING
+
+  Set fill
+  
+  DRAW T-SHIRT & JACKET
+  Draw circle 
+  Draw circle 
+  Set fill
+  Draw rectangle 
+  Draw circle 
+  Draw circle 
+  Set fill 
+  Draw circle 
+  Draw circle 
+  Set fill 
+  Draw circle 
+  Draw circle 
+
+  DRAW T-SHIRT SKULL PRINT
+  Set fill 
+  Draw ellipse  
+  Draw ellipse 
+  Set fill     
+  Draw ellipse 
+  Set fill 
+  Draw cir
+  Draw circ
+  Draw ellip
+  Set fill
+  Draw circ
+  Draw circ
+  Set fill
+  Draw ellip
+  Draw ellip
+  Draw ellip
+  Draw ellip
+
+  DRAW BACK OF HAIR
+  Set fill 
+  Draw arc
+  Set fill 
+  Draw arc
+
+  DRAW HAIR DETAILS
+  Set fill 
+  Draw triangle 
+  Draw triangle 
+  Draw triangle
+  Draw triangle
+
+  DRAW NECK
+  Set fill 
+  Set rect 
+  Draw ellipse 
+  Set fill 
+  Draw ellipse 
+
+  DRAW HEAD
+  Set fill
+  Draw ellipse
+
+  DRAW EYES
+  Draw circle
+  Draw circle
+
+  DRAW EYES
+  Set fill 
+  Draw circleD
+  Draw circleD
+
+  Set Pupil X & Y axis on the canvas and display this
+  eye1.update(mouseX, mouseY)
+  eye2.update(mouseX, mouseY)
+  eye1.display
+  eye2.display
+  
+  DRAW NOSE
+  Set fill 
+  Draw ellipse 
+  Set fill
+  Draw ellipse 
+  Draw ellipse
+  
+  DRAW CHEEKS
+  Set fill
+  Draw ellipse
+  Draw ellipse
+  
+  DRAW LIPS
+  Set fill
+  Draw arc 
+  Draw arc
+  Set fill 
+  Draw arc 
+
+  DRAW FRINGE/BANGS OF HAIR
+  Set fill
+  Draw arc
+  Draw triangle
+  Draw triangle
+
+  DRAW HIGHLIGHTS & SHADING
+  Adding highlights to the eyes
+  Set fill 
+  Draw circle 
+  Draw circle 
+    
+  CHEEKS
+  Set fill
+  Draw circle 
+  Draw circle 
+  Set fill
+    
+  LIPS
+  Draw ellipse
+  Draw ellipse 
+    
+  HAIR
+  Set fill
+  Draw ellipse
+  Draw ellipse
+  Set fill
+  Draw ellipse
+    
+  CLOTHES
+  Set fill 
+  Draw rect 
+  Draw rect 
+  Set fill 
+  Draw rect 
+  Draw rect 
+    
+  ADDING TONES TO JACKET COLLAR (FUR)
+  Set fill 
+  Draw ellipse 
+  Draw ellipse
+  Draw ellipse
+  Draw ellipse
+  Draw ellipse
+  Draw ellipse
+    
+    
+  DRAW PETS: FINN & PEGGY 
+  DRAW FINN
+  Set fill
+  Draw ellipse
+  Draw ellipse
+  Set fill
+  Draw ellipse
+  Draw ellipse
+  Set fill
+  Draw ellipse
+  Set fill
+  Draw ellipse
+  Set fill
+  Draw ellipse
+  Set fill
+  Draw circle
+  Draw circle
+  Set fill
+  Draw circle
+  Set fill
+  Draw circle
+  Draw circle
+  Set fill
+  Draw circle
+  Draw circle
+  Set fill
+  Draw circle
+  Draw circle
+  Draw ellipse
+  Set fill
+  Draw circle
+  Draw circle
+
+  DRAW PEGGY
+  Set fill
+  Draw ellipse
+  Draw ellipse
+  Set fill
+  Draw ellipse
+  Draw ellipse
+  Set fill
+  Draw ellipse
+  Set fill
+  Draw ellipse
+  Set fill
+  Draw ellipse
+  Set fill
+  Draw circle
+  Draw circle
+  Set fill
+  Draw circle
+  Set fill
+  Draw circle
+  Draw circle
+  Set fill
+  Draw circle
+  Draw circle
+  Set fill
+  Draw circle
+  Draw circle
+  Draw ellipse
+  Set fill
+  Draw circle
+  Draw circle
+
+---------------------------------------------------------------------------
+
+ADDING INTERACTIVITY IN PORTRAIT
+
+Interactivity 1: Change colour of both the dogs eyes
+
+  IF mouseIsPressed 
+  THEN
+  dog1_eyeclr = random
+  dog2_eyeclr = random
+  ELSE
+  dog1_eyeclr = '' dog2_eyeclr = ''
+
+Interactivity 2: Move eyes with mouse cursor
+
+Create a function to move pupils to these positions & angles
+   DO function Eye = tx, ty, ts 
+   IF
+   this.x = tx
+   this.y = ty
+   this.size = ts
+   THEN
+   this.update = function(mx, my){
+   this.angle = atan2(my - this.y, mx - this.x)
+   LOOP
+   
+Use push() & pop() to contain the pupils in the eyes. Set parameters for pupil boundary, the colour & scale.
+
+   DO this.display = function(){
+   LOOP WHILE
+   push
+   translate
+   ellipse
+   rotate
+   fill
+   ellipse
+   pop
+
+END OF SCRIPT
+
+---------------------------------------------------------------------------
+
+Melina Seserko (3192702). Programming for design, 2019.

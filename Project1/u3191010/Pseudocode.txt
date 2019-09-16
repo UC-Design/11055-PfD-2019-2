@@ -1,0 +1,22 @@
+START
+
+create_canvas 1000px,1000px
+
+draw_portrait
+	create_border 7px
+	draw_head
+	draw_hair
+	draw_left_ear
+	draw_right_ear
+	draw_left_eye
+	draw_left_eyebrow
+	draw_nose
+	draw_right_eye
+	draw_right_eyebrow
+	draw_mouth
+	draw_lips
+	draw_scarf
+	draw_coat_lapels
+	draw_coat
+
+END

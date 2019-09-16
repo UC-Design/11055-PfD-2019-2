@@ -1,0 +1,60 @@
+THIS PROGRAM WILL CREATE A SELF PORTRAIT
+
+canvasWidth = 1500
+canvasHeight = 700
+
+DO
+	Draw canvas with dimensions canvasWidth, canvasHeight
+
+DO
+	Draw and colour face
+
+DO
+	Draw and colour left ear
+
+DO
+	Draw and colour right ear
+
+DO
+	Draw and colour the shadow on the right side of the face
+
+DO
+	Draw and colour the shadow on the left eye 
+
+DO 
+	Draw and colour the shadow on the bottom left of the face
+
+DO
+	Draw and colour the shadow on the nose and chin
+
+DO
+	Draw and colour the shine on the forehead
+
+DO
+	Draw and colour the shine on the nose
+
+DO
+	Draw and colour the top lip
+
+DO
+	Draw and colour the bottom lip
+
+DO
+	Draw and colour the left eye (the eyesocket, iris, pupil, corner eyeskin & eye shine)
+
+DO
+	Draw and colour the left eyebrow
+
+DO
+	Draw and colour the right eye (the eyesocket, iris, pupil & corner eyeskin)
+
+DO
+	Draw and colour the right eyebrow
+
+DO
+	Draw and colour the nostrils
+
+DO
+	Draw and colour the hair
+
+END OF PROGRAM
