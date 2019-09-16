@@ -65,7 +65,7 @@ eye2 = new Eye (200, 250, 50);
 background('#fdf473');
 
 //CREATING GEOMETRIC PATTERN FOR BACKGROUND
-/* e.g. IF pattern1 is less than or equal to the width, then add 20 to   pattern 1. */ 
+/* e.g. IF pattern1 is less than or equal to the width, then apply 20 to pattern 1. */ 
 for (var pattern1 = 0; pattern1 <= width; pattern1 = pattern1 + 20 ){
 for (var pattern2 = 0; pattern2 <= height; pattern2 = 20 + pattern2){
       noStroke ();
