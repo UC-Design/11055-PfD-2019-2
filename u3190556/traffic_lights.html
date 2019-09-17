@@ -1,0 +1,40 @@
+the variable for break is htmlbr. its to make a new line and make it all neat. 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+var r1_light = 3;
+var r2_light = 3;
+var ic_red = "red";
+var ic_yel = "yellow";
+var ic_gre = "green";
+var html_br = "<br>";
+var text = "";
+
+for (var lp = 1; lp<15; lp++){
+    switch (r1_light){
+        case 1:
+        text = "road light is" + ic_gre;
+        r2_light = 3
+        r1_light = 2
+        break;   
+        case 2:
+        text = "road light is" + ic_yel;  
+        r2_light = 3
+        r1_light = 2
+        break;
+        case 3:
+        text = "road light is" + ic_red;
+        r2_light = 1;
+        r1_light = 3;
+        break;
+    }
+    document.write(text + html_br);
+    switch(r2_light){
+
+    }
+}
+</script>

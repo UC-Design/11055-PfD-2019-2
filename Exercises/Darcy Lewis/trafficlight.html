@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+
+var r1_light = 3;
+var r2_light = 3;
+var lc_Red = "Red";
+var lc_Yel = "Yellow";
+var lc_Gre = "Green";
+var html_br = "<b/>";
+var out_text = "";
+
+for (var lp = 1; lp < 15 ; lp++ ) {
+
+    switch(r1_light) {
+        case 1:
+            out_text = "Road 1 is " + lc_Gre;
+            r2_light = 3;
+            r1_light = 2;
+            break;
+        case 2:
+            out_text = "Road 1 is " + lc_Yel;
+            r2_light = 3;
+            r1_light = 3;
+            break;
+        case 3:
+            out_text = "Road 1 is " + lc_Red;
+            r2_light = 1;
+            r1_light = 3;
+            break;
+    }
+    document.write(out_text+html_br);
+
+    switch(r2_light) {
+        case 1:
+            out_text = "Road 2 is " + lc_Gre;
+            r1_light = 3;
+            r2_light = 2;
+            break;
+        case 2:
+            out_text = "Road 2 is " + lc_Yel;
+            r1_light = 3;
+            r2_light = 3;
+            break;
+        case 3:
+            out_text = "Road 2 is " + lc_Red;
+            r1_light = 1;
+            r2_light = 3;
+            break;
+    }
+    document.write(out_text+html_br);
+    
+}
+
+
+</script>
+
+</body>
+</html>
