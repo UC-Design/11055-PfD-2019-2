@@ -1,0 +1,27 @@
+State global variables :
+colour = 0;
+
+Background – white, covers error of misc elements being drawn underneath phone
+
+Draw function ;
+	Phone
+	Phone screen
+	Phone extras (speaker + home button)
+
+//Draw scatter ‘stars’
+For ( i = 0; ……){
+X location = first point of screen rectangle * xyz
+Y location = y point of screen rectangle * xyz
+Draw circles infinitely and clear them after each ‘spawn’
+}
+
+Random value = 0;
+If mouse is clicked (function)
+If (value === 0){
+	Value = 255; (white)
+Change constellation stroke colour
+Switch visible text
+}
+Mouse clicked again – ‘reset’ changes
+
+No "end" as code will continously check for if mouse has been clicked and will continously loop the star scatter

@@ -1,0 +1,28 @@
+THIS PROGRAM WILL DRAW A SELF PORTRAIT
+
+SART PROGRAM
+
+DO
+ Create a function: 'setup'
+DO
+  Create canvas. canvasWidth=500, canvasHeight=666
+DO
+  Create function: 'draw'
+DO
+  Set strokeWeight = 6
+Do
+ Create rectangle for canvas
+Do
+  Draw face
+Do
+  Draw nose
+Do
+  Draw mouth
+Do
+  Draw eyes
+Do
+  Draw eyebrows
+Do
+  Draw hair
+
+END PROGRAM
