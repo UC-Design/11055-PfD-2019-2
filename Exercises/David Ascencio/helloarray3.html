@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My First Web Page</h1>
+<p> HellooArray3.</p>
+<script>
+    document.write("0");
+    
+    var person = prompt("please enter your name ", "Harry Potter");
+    //var person = window.prompt("Please enter your name", "test name");
+    var txtr="";
+    
+    document.write("1");
+    
+    if (person == null || person == ""){
+        txtr="User cancelledd the prompt.";
+    } else {
+        txtr=myFirstFunction(person);
+    }
+    document.write(txtr);
+    
+    function myFirstFunction(name){
+        var txt = "Hello" + name + ",have a great day!";
+        return txt;
+    }
+    
+</script>
+</body>
+</html>

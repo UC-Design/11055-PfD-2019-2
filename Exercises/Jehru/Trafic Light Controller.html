@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>
+        Trafic Light Controller
+    </h1>
+    <p>
+        Test
+    </p>
+
+    <script>
+        
+        var r1_light = 3;
+        var r2_light = 3;
+
+        var lc_red = "Red";
+        var lc_yel = "Yellow";
+        var lc_gre = "Green";
+        var html_br = "<br>";
+        var text_r1;
+        var text_r2;
+
+        for (var lp = 1; lp < 20; lp++) {
+            switch(r1_light){
+                
+                //Step 3,  RL= Green, change R2 to case 2. R1 still case 1
+                case 1: 
+                    text_r1 = "Road light 1 is " + lc_gre;
+                    r2_light = 2;
+                    break;
+                
+                // Step 5, RL = Yellow 
+                case 2: 
+                    text_r1 = "Road light 1 is " + lc_yel;
+                    r2_light = 3;
+                    r1_light;
+                    break;
+
+                // Step 1, RL1 = Red, Change R2 to case 1
+                case 3: 
+                    text_r1 = "Road light 1 is " + lc_red;
+                    r2_light = 1;
+                    r1_light = 1;
+                    break;
+                
+                //Step 7
+                case 4: 
+                    text_r1 = "Road light 1 is " + lc_red;
+                    r2_light = 4;
+                    r1_light;
+                    break;
+                
+                //Step 9
+                case 5:
+                    text_r1 = "Road light 1 is " + lc_red;
+                    r2_light = 5;
+                    r1_light;
+                    break;
+                
+                // Step 11 - Back to Beginning
+                case 6:
+                    r2_light = text_r2 = "Road light 2 is " + lc_red;
+                    r1_light = 3;
+                    break;
+            }
+            document.write(text_r1 + html_br);
+
+            switch(r2_light){
+
+                //Step 2, RL2 = Red, Change R1 to case 1. R2 is still case 1
+                case 1:
+                    text_r2 = "Road light 2 is " + lc_red;
+                    r2_light;
+                    r1_light = 1;
+                    break;
+
+                // Step 4, RL2 = Red (Still), Change R1 to case 2. R2 is still case 2
+                case 2:
+                    text_r2 = "Road light 2 is " + lc_red;
+                    r2_light;
+                    r1_light = 2;
+                    break;
+
+                // Step 6 
+                case 3:
+                    text_r2 = "Road light 2 is " + lc_red;
+                    r2_light;    
+                    r1_light = 4;
+                    break;
+
+                // Step 8
+                case 4: 
+                    text_r2 = "Road light 2 is " + lc_gre;
+                    r2_light;
+                    r1_light = 5;
+                    break;
+                
+                //Step 10
+                case 5:
+                    text_r2 = "Road light 2 is " + lc_yel;
+                    r2_light;
+                    r1_light = 6;
+                    break;
+            }
+            document.write(text_r2 + html_br + html_br)
+        }
+
+
+    </script>
+
+
+</body>
+</html>

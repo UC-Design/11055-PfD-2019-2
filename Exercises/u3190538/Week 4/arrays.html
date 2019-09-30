@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <script>
+      var timeOfDay = new Date();
+      var helloArray = [
+        "Hello",
+        "world",
+        "how",
+        "are",
+        "you",
+        "today",
+        "tonight"
+      ];
+      if (timeOfDay.getHours() >= 18) {
+        helloArray[5] = "";
+      } else {
+        helloArray.pop();
+      }
+
+      for (var x = 0; x < helloArray.length; x++) {
+        document.write(helloArray[x]);
+        if (helloArray.length - 1 != x) {
+          document.write(" ");
+        }
+      }
+      document.write("?");
+    </script>
+  </body>
+</html>

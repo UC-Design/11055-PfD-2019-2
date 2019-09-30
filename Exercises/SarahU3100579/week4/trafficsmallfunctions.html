@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Traffic Functions</h1>
+        
+        <script>
+            var r1light = 3;
+            var r2light = 3;
+            var htmlbr = "<br>";
+            var roadlight = ""; 
+            var hello = 3; 
+            
+         //so for this one nothing works. the otherone displayed the same message over and over, the for and switch work i think and the first change does, but the second one doesnt. for this nothing shows up so i assume i messed up the functions maybe?
+          
+          for (var lp = 1; lp < 15; lp++) {
+                switch (r1light) {
+                    case 1:
+                        roadlight = trafficFunction("Road 1", "green");
+                        light = changelight(r1light, 2);
+                        break;
+                    case 2:
+                        roadlight = trafficFunction("Road 1", "orange");
+                        light = changelight(r1light, 3);
+                        break;
+                    case 3:
+                       roadlight = trafficFunction("Road 1", "red");
+                       light = changelight(r2light, 1);
+                        break;
+                }
+                
+                document.write(roadlight + htmlbr);
+                
+                switch (r2light) {
+                  case 1:
+                        roadlight = trafficFunction("Road 2", "green");
+                        light = changelight(r2light, 2);
+                        break;
+                    case 2:
+                        roadlight = trafficFunction("Road 2", "orange");
+                        light = changelight(r2light, 3);
+                        break;
+                    case 3:
+                        roadlight = trafficFunction("Road 2", "red");
+                        light = changelight(r1light, 1);
+                        break;
+                }
+        
+                document.write(roadlight + htmlbr);
+                
+           }
+            
+            function trafficFunction(road, colour)
+            var txt1 = road + " light is " + colour;
+            return txt1; 
+            
+            function changelight(roadl, lightcolour)
+            var lightchange  = roadl = lightcolour;
+            return lightchange;
+        
+            
+
+        </script>
+    
+    </body>
+</html>
