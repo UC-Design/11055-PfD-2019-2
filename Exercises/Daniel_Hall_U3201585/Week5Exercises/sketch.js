@@ -130,11 +130,15 @@ function draw(){
 
             //Beard
             fill(128, 63, 14);
-            quad(171,304,175,374,195,378,171,304);
+            quad(171,304,175,374,195,378,171,304); 
             quad(184,348,197,406,214,392,184,348);
             quad(198,368,211,425,250,425,198,368);
             quad(225,397,244,455,296,435,225,397);
-
+            quad(227,429,294,469,317,428,227,429);
+            quad(221,406,226,437,259,425,221,406);
+            quad(249,416,282,466,306,431,249,416);
+            quad(247,428,267,457,305,438,247,428);
+        
 
             if(eyeCheck == 1){
                 //Left Eye
@@ -196,15 +200,14 @@ function draw(){
                 rect(x-75,y+215,2,200);
                 
             }
-            
 }
 
 function mouseClicked() {
     if (eyeCheck === 0) {
       eyeCheck = 1;
     } else {
-      eyeCheck = 0;
+      //eyeCheck = 0;
     }
-    //window.alert(mouseX+" "+mouseY);
+    window.alert(mouseX+" "+mouseY);
 }
         

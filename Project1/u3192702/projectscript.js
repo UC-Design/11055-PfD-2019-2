@@ -65,7 +65,7 @@ eye2 = new Eye (200, 250, 50);
 background('#fdf473');
 
 //CREATING GEOMETRIC PATTERN FOR BACKGROUND
-/* e.g. IF pattern1 is less than or equal to the width, then add 20 to   pattern 1. */ 
+/* e.g. IF pattern1 is less than or equal to the width, then apply 20 to pattern 1. */ 
 for (var pattern1 = 0; pattern1 <= width; pattern1 = pattern1 + 20 ){
 for (var pattern2 = 0; pattern2 <= height; pattern2 = 20 + pattern2){
       noStroke ();
@@ -178,32 +178,32 @@ fill (eye_white);
 circle (300, 250, 50);
 circle (200, 250, 50);
     
-//Pupils move with the cursor
+//Set coordinates for eyes to move with the cursor
 eye1.update(mouseX, mouseY);
 eye2.update(mouseX, mouseY);
 eye1.display();
 eye2.display();
     
-//Nose
+//Draw Nose
 fill (dark_skin_clr);
 ellipse (250, 317, 40, 10)
 fill(hair_light);
 ellipse (237, 315, 10, 5);
 ellipse (262, 315, 10, 5);
     
-//Cheeks/blush
+//Draw Cheeks/blush
 fill (cheeks);
 ellipse (188, 292, 25, 15);
 ellipse (313, 292, 25, 15);
     
-//Lips
+//Draw Lips
 fill (lips_top);
 arc(235, 340, 27, 20, PI, TWO_PI); 
 arc(263, 340, 27, 20, PI, TWO_PI);
 fill (lips_bottom);
 arc(249, 340, 55, 30, TWO_PI, PI); 
 
-//Front of hair/bangs/fringe
+//Draw Front of hair/bangs/fringe
 fill (hair);
 arc(250, 220, 240, 250, PI, TWO_PI);
 triangle(270, 100, 350, 90, 250, 150);
@@ -251,7 +251,7 @@ ellipse (340, 400, 20, 20);
 ellipse (320, 410, 10, 10);
 ellipse (347, 450, 15, 15);
     
-//PETS: FINN & PEGGY
+//DRAW PETS: FINN & PEGGY
 //Finn
 fill (dog1_dark);
 ellipse (35, 480, 18, 18);
@@ -323,7 +323,8 @@ dog2_eyeclr = color (random(255), random(255), random(255));
 }else {dog1_eyeclr = '#684b09'; dog2_eyeclr = '#7c5c1c';};    
 };
 
-//Interactivity 2: Move eye pupils with cursor
+//Interactivity 2: Move eyes with cursor
+//Create a function to move pupils to these positions & angles
 function Eye(tx, ty, ts){
    this.x = tx;
    this.y = ty;
@@ -332,6 +333,8 @@ function Eye(tx, ty, ts){
    this.angle = atan2(my - this.y, mx - this.x);
    };
 
+//Use push() & pop() to contain the eyes in specified area. Set parameters for eye boundary, the colour & scale.
+    
 this.display = function(){
    push();
    translate(this.x, this.y);
@@ -342,6 +345,5 @@ this.display = function(){
    pop();
   };
   };
-
 
 //Melina Seserko (3192702). Programming for design, 2019.

@@ -1,0 +1,53 @@
+//START for 'function mouseClicked'
+
+DO
+IF 
+    Mouse is clicked
+    
+THEN
+    What is 'a'?
+    
+IF 
+    'a' equals 1
+    
+THEN
+     set 'a' to case 2
+    
+IF
+    'a' equals 2
+    
+THEN
+    set 'a' to case 1
+    
+LOOP
+
+
+//START for 'function setup' (whole project)
+
+
+createCanvas
+
+DO
+    Draw portrait:
+        Shirt
+        Face
+        Ears
+        Hair
+        Eyebrows
+        Mouth
+        Eyes
+        Nose
+
+IF
+    Switch statement (a) equals 2
+    
+THEN 
+    Portrait eyes open
+    
+IF 
+    Switch statement (a) equals 1
+    
+THEN
+    Portrait eyes close
+    
+LOOP
