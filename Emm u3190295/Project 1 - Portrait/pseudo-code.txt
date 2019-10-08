@@ -1,0 +1,31 @@
+define variables, etc here. Background picture has to be defined - bg;
+
+function setup() {
+      createCanvas(width and height of picture reference);
+      bg = (/images/picture of me.jpg);
+      background( a picture of me); this line will be commented out as it is a reference
+      Although it is just a reference, it's there to not only show coding skill, but is
+      a comparison almost.
+
+      I also wanna add a function that changes the eye colour.
+      I'd have to define eye colour before saying what eye colour will be. - eyecolour;
+      eyecolour = (RGB); Maybe randomised on click?
+
+}
+
+function draw() {
+
+      line(x1,y1,x2,y2);  For who knows how many lines
+      
+      Maybe ellipses for the eyes and pupils
+      ellipse(x,y,w,h);  X4 with 2 being a size at least a half or less than the other 2
+      
+      Text(If I'm to have the eyes change colour on click then I might wanna let the user
+      know); As I've seen so far I can put textSize in any place.
+}      
+
+function for mouse click to change eye colour-mousePressed?() {
+      I could set it up so that the user has to click the eyes or just anywhere in 
+      browser.
+      eyecolour = (RGB);
+}
