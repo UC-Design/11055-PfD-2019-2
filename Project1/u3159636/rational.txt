@@ -1,0 +1,3 @@
+Rational
+
+From the first project 'self-potrait', I have learned about the javascript. I first created a canvas to contain my image set the background color. Then I used my own image to draw the line by using vertex function and circle function. One of the problem I came up with is to locate all the points to be able to connect them together. Furthermore, I used if statement to make the background change color as well as set up a value to the background. Overall, I conducted the final work as I submited on Canvas.
