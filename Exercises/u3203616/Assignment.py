@@ -1,0 +1,1 @@
+<img src="http://covers.openlibrary.org/b/isbn/9780385533225-S.jpg" />
