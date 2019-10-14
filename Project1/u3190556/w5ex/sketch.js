@@ -1,4 +1,4 @@
-//canvas size andcolour set up so that it can flash colours.
+//canvas size and colour set up so that it can flash colours.
     function setup() {
         createCanvas(550, 550);
         backgroundColor = color(100, 50, 150);
@@ -11,6 +11,7 @@
         fill('rgba(100%,0%,100%,0.5)');
         strokeWeight(0)
         //I made the stroke weight 0 to get rid of the ugly black lines
+        fill ('#fae')
         ellipse(230, 260, 330, 330);
         
 //I placed the fill colour above the shape i wanted to fill.
