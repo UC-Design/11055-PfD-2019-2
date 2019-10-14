@@ -1,0 +1,7 @@
+f = open("one.txt", "r")
+s = f.read()
+f.close()
+f = open("one_reversed.txt", "w")
+lines = s.split('\n')
+f.write('\n'.join(lines[::-1]))
+f.close()
