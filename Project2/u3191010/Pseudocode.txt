@@ -38,6 +38,8 @@ DO menu!
 
             menu_loop = false
 
+    ELSE menu_loop = true
+
 LOOP WHILE menu_loop = true
 
 END
