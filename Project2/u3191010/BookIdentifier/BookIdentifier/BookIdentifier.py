@@ -40,6 +40,7 @@ while menu_loop == True:
 
                 html_file.write("<html><head><title>Your Books</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\" /></head><body><h1>Your Books</h1>")
 
+                # Repeat for every ISBN
                 for line in read_file:
                     # Call API and print book cover to webpage
                     html_file.write("<div class=\"background\"></div><div class=\"bookdisplay\"><h3>" + line + "</h3><img src=\"http://covers.openlibrary.org/b/isbn/" + line + "-L.jpg\" /></div>")
