@@ -1,0 +1,11 @@
+body, html {background-color: black;color: white;font-family: 'Playfair Display', sans-serif;letter-spacing: 5px;height: 100%;padding: 0px;margin: 0px;} 
+ img {display: block;margin: 0 auto;height: 400px;} 
+ .paralaxScroll {height: 250px;background-image: url(lib.jpg);background-size: cover;background-attachment: fixed;} 
+ .paralaxScroll2 {height: 200px;background-image: url(lib.jpg);background-size: cover;background-attachment: fixed;} 
+ h1 {font-size: 72px;text-align: center;margin: 0px;padding: 35px;font-weight: normal;} 
+ h3 {text-align: center;} 
+ .bgStyle {padding: 12px}.footer {background-color: black;width: 100%;text-align: right;font: normal 20px;letter-spacing: 5px;font-family: 'Playfair Display', sans-serif;padding-top: 80px;padding-bottom:30px} 
+ .footer .footer-left p {color: white;font-size: 14px;margin: 0;} 
+ .footer p.footer-links {font-size: 18px;font-weight: bold;color: white;margin: 0 0 10px;padding: 10px;} 
+ .footer p.footer-links a {display: inline-block;line-height: 2;text-decoration: none;color: inherit;font-weight: 200;padding-top: 10px;} 
+ .footer .footer-right {float: right;margin-top: 10px;max-width: 180px;}.footer .footer-right a {display: inline-block;width: 35px;height: 35px;background-color: white;border-radius: 2px;font-size: 20px;color: #33383b;text-align: center;line-height: 35px;margin-left: 3px;}
