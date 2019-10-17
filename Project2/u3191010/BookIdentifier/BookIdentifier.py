@@ -18,6 +18,7 @@ while menu_loop == True:
     
     # Exception for non-integer inputs
     except:
+        print()
         continue
 
     if menu_choice == 1:
@@ -27,7 +28,6 @@ while menu_loop == True:
         while input_loop == True:
             print("\nEnter file name/address:")
             file_name = input()
-            print()
             
             # Check if file exists
             if os.path.exists(file_name) == True:
@@ -54,6 +54,8 @@ while menu_loop == True:
                 open_file.close()
                 html_file.close()
 
+                print()
+
                 break
 
             else:
@@ -67,4 +69,5 @@ while menu_loop == True:
         sys.exit() # Exit program
 
     else:
+        print()
         continue
