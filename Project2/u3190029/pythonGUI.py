@@ -4,7 +4,7 @@ from tkinter import filedialog
 import webbrowser
 import os
 import os.path
-from pygame import mixer # to install pygame, write: [pip install pygame] into python CLI 
+#from pygame import mixer # to install pygame, write: [pip install pygame] into python CLI 
 
 window = tkinter.Tk() 
 
@@ -12,7 +12,7 @@ window.title("ISBN GUI") # to rename the title of the window
 window.geometry("500x300") # to set window size
 window.resizable(width=False, height=False) # to disable window resizing
 
-mixer.init() # initialise mixer for music
+#mixer.init() # initialise mixer for music
 
 file_type = [("Text Files", ".txt")] #Only shows .txt files in the file explorer
 img = tkinter.PhotoImage(file="lib.gif") #assigns var to bg image location
@@ -37,16 +37,16 @@ def text_file_name_input():
     isbnWrite.close
     webbrowser.open('file://' + os.path.realpath("ISBN_Output.html"))
 
-# Just the music functions
-def music():
-    mixer.music.load("painter.mp3")
-    mixer.music.play()
+# # Just the music functions
+# def music():
+#     mixer.music.load("painter.mp3")
+#     mixer.music.play()
 
-def music_pause():
-    mixer.music.pause()
+# def music_pause():
+#     mixer.music.pause()
 
-def music_resume():
-    mixer.music.unpause()
+# def music_resume():
+#     mixer.music.unpause()
 
 #Background Image
 backgroundLabel = tkinter.Label(image=img).place(x=0, y=0, relwidth=1, relheight=1)
@@ -56,9 +56,9 @@ Heading = tkinter.Label(window, text = "Book Cover Finder", bg = "#5e0000", fg =
 
 #Buttons
 buttonCreate = tkinter.Button(text = "Find ISBN File & Create HTML Page", fg = "white", bg = "#855020", command = text_file_name_input, font = ("Helvetica", 12)).pack(pady=10,side=tkinter.TOP)
-buttonPause = tkinter.Button(text = "Pause Music", fg = "white", bg = "#5e0000", command = music_pause, font = ("Helvetica", 12)).pack(pady=5,side=tkinter.BOTTOM)
-buttonResume = tkinter.Button(text = "Resume Music", fg = "white", bg = "#5e0000", command = music_resume, font = ("Helvetica", 12)).pack(side=tkinter.BOTTOM)
+# buttonPause = tkinter.Button(text = "Pause Music", fg = "white", bg = "#5e0000", command = music_pause, font = ("Helvetica", 12)).pack(pady=5,side=tkinter.BOTTOM)
+# buttonResume = tkinter.Button(text = "Resume Music", fg = "white", bg = "#5e0000", command = music_resume, font = ("Helvetica", 12)).pack(side=tkinter.BOTTOM)
 
-music()
+# music()
 
 window.mainloop() 
