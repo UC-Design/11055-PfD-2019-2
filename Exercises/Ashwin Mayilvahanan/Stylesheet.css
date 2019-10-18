@@ -1,0 +1,5 @@
+body, html {background-color: black;color: white;font-family: 'Playfair Display', sans-serif;height: 100%;padding: 0px;margin: 0px;} 
+ img {display: block;margin: 0 auto;height: 900px;} 
+ .background {height: 450px;background-image: url(lib.jpg);background-size: cover;background-attachment: fixed;} 
+ h1 {font-size: 72px;text-align: center;margin: 0px;padding: 35px;font-weight: normal;} 
+ .paralaxStyle {padding: 12px;padding-bottom: 30px;}
