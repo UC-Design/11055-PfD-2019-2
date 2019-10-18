@@ -38,12 +38,12 @@ while menu_loop == True:
                 # Create webpage
                 html_file = open("ISBN.html", "w+")
 
-                html_file.write("<html><head><title>Your Books</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\" /></head><body><h1>Your Books</h1>")
+                html_file.write("<html><head><title>Your Books</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\" /></head><div class=\"background\"></div><body><div><h1>Your Books</h1></div><div class=\"background1\"></div>")
 
                 # Repeat for every ISBN
                 for line in read_file:
                     # Call API and print book cover to webpage
-                    html_file.write("<div class=\"background\"></div><div class=\"bookdisplay\"><h3>" + line + "</h3><img src=\"http://covers.openlibrary.org/b/isbn/" + line + "-L.jpg\" /></div>")
+                    html_file.write("<div class=\"bookdisplay\"><h3>" + line + "</h3><img src=\"http://covers.openlibrary.org/b/isbn/" + line + "-L.jpg\" /></div><div class=\"background\"></div>")
 
                 
                 html_file.write("</body></html>")
