@@ -1,29 +1,46 @@
 # Define variables
-#import isbnlib #???
-#base_api_link = "https://www.googleapis.com/books/v1/volumes?q=isbn:"
-#import time #???
+import urllib.request
+import json
+import textwrap
+n = 0
+base_api_link = "https://www.googleapis.com/books/v1/volumes?q=isbn:"
 # Access ISBN file
 with open("ISBN.txt") as ISBNfile:
     content = ISBNfile.readlines()
-print(content)
-ISBNfile.close()
+# FOR content array length
+for x in content:
+    with urllib.request.urlopen(base_api_link + content[n]) as apiurl:
+        text = apiurl.read()
+    # Decode the webpage
+    decoded_text = text.decode("utf-8")
+    obj = json.loads(decoded_text)
+    # Store book details
+    volume_info = obj["items"][0]
+    authors = obj["items"][0]["volumeInfo"]["authors"]
+    # displays title, summary, author, domain, page count and language
+    
+    print("\nTitle:", volume_info["volumeInfo"]["title"])
+    print("\nSummary:\n", textwrap.fill(volume_info["searchInfo"]["textSnippet"]))
+    n += 1
+    ISBNfile.close()
+
+#CHECK IF THERE ARE NUMBER
+#CHECK IF NUMBERS ARE VALID
 
 
-# Retrieve book details
-# displays title, summary, author, domain, page count and language
-##"""
-##print("\nTitle:", volume_info["volumeInfo"]["title"])
-##print("\nSummary:\n")
-##print(textwrap.fill(volume_info["searchInfo"]["textSnippet"], width=65))
-##print("\nAuthor(s):", ",".join(authors))
-##print("\nPublic Domain:", volume_info["accessInfo"]["publicDomain"])
-##print("\nPage count:", volume_info["volumeInfo"]["pageCount"])
-##print("\nLanguage:", volume_info["volumeInfo"]["language"])
-##print("\n***")
-##""""
-# Store book details
 # Create CSS file
 # Create HTML file
+if n = 0:
+    #create html
+else:
+    #append html
+htmlContent = """
+
+"""
+
+htmlFile = open("ISBNwebpage.html","w")
+htmlFile.write(htmlContent)
+htmlFile.close()
 # Open HTML file
 
 
