@@ -14,6 +14,13 @@ img {
 }
 
 .background {
+    height: 250px;
+    background-image: url(library.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background1 {
     height: 450px;
     background-image: url(library.jpg);
     background-size: cover;
@@ -26,6 +33,10 @@ h1 {
     margin: 0px;
     padding: 35px;
     font-weight: normal;
+}
+
+h3 {
+    text-align: center;
 }
 
 .bookdisplay {
