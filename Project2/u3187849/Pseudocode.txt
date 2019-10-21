@@ -1,0 +1,132 @@
+menu() FUNCTION
+
+	DO
+
+		Tell_User_Its_Menu_Options!
+
+		userInput = readUserNextInput!
+
+		IF userInput == Quit THEN
+
+			END PROGRAM
+
+		ELSE IF userInput == Info THEN
+
+			Give_Additional_Info!
+
+		ELSE IF userInput == Read File THEN
+
+			DO
+
+ 				Give_User_Instruction_To_Provide_File_Name!
+
+				file = readUserNextInput!
+
+				IF File_Exists!THEN
+
+					Tell_User_What_File_Theyve_Chosen!
+
+					isbnList = []
+					Open_User_File_With_Reader!
+
+						Does_File_Contain_13_Digit_Long_Strings!
+
+							Append_All_13_Digit_Strings_To_isbnList!
+
+					IF isbnList_Is_Empty! THEN
+
+						Tell_User_That_The_File_Doesnt_Contain_isbns!
+
+						RUN menu FUNCTION
+					
+					isbnListFinal = []
+
+					Verify_If_Strings_In_isbnList_Are_Actually_ISBNs
+
+						Append_All_Verified_isbns_To_isbnListFinal!
+
+					IF isbnListFinal_Is_Empty! THEN
+
+						Tell_User_That_The_File_Doesnt_Contain_isbns!
+
+						RUN menu FUNCTION
+
+					Try_To_Create_Folder_To_Save_HTML_Into!
+					
+						IF Folder_Exists! THEN
+					
+							Tell_User_That_The_Website_Will_Be_Put_Into_Existing_Folder
+							
+						ELSE
+							
+							Tell_User_That_The_Website_Will_Be_Put_Into_New_Folder
+							Create_Folder_To_Save_HTML_Into
+
+					Create_HTML_File_In_Folder!
+					
+					Open_HTML_File_With_Writer!
+			
+						Write_Head_Content!
+	
+						Write_Body_Content_Up_Til_ISBN_Content_Will_Be_Written!
+						
+						isbnCounter = 1
+						DO WHILE There_Are_More_isbns_To_Read!
+						
+							IF isbnCounter == EVEN! THEN
+
+								Set This_Divs_Colour = light yellow
+							
+							ELSE
+								
+								Set This_Divs_Colour = light blue
+							
+							IF isbnCounter == Is_A_Multiple_Of_3! THEN
+	
+								Create_Image_Between_This_Row_&_New_Row!
+				
+							Make_Divs_Start_New_Row!
+
+						LOOP
+	
+						Create_Website_Footer!
+
+						Write_Closing_Tags_For_Website!
+
+					Close_Reader!
+
+					Close_Writer!
+
+					Open_Created_Website_For_User!
+
+				ELSE
+
+					Tell_User_That_File_Is_Not_Found!
+
+					DO
+						Give_User_Error_Menu_Options!
+
+						userInput = readUserNextInput!
+
+						IF userInput == Quit THEN
+
+							END PROGRAM
+
+						ELSE IF userInput == Main Menu THEN
+
+							RUN menu FUNCTION
+
+						ELSE IF userInput == Retry
+
+							BREAK LOOP
+						ELSE
+
+							Tell_User_To_Give_Their_Choice_Again!
+					LOOP
+		ELSE
+			That_The_Choice_Is_Not_An_Option!
+	LOOP	
+
+Give_User_Welcome_Message!
+
+RUN menu() FUNCTION
