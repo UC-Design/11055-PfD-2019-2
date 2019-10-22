@@ -1,0 +1,45 @@
+body, html {
+    background-color: #361707;
+    color: white;
+    font-family: Courier New;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    height: 900px;
+}
+
+.background {
+    height: 250px;
+    background-image: url(library.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background1 {
+    height: 450px;
+    background-image: url(library.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 72px;
+    text-align: center;
+    margin: 0px;
+    padding: 35px;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: center;
+}
+
+.bookdisplay {
+    padding: 12px;
+    padding-bottom: 30px;
+}

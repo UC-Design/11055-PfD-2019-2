@@ -1,0 +1,70 @@
+DO
+//Set up for background change color if else
+let value = 255;
+
+//Set up for canvas
+function setup();
+createCanvas(910, 902);
+
+function draw()
+background(value);
+//Draw face
+noStroke();
+fill(247, 221, 212);
+Draw face;
+
+//Draw eyes (white part)
+fill('white');
+Draw eyes;
+
+//Draw pupil
+noStroker();
+fill('99,57,15');
+Draw pupil;
+
+//Draw eyebrow
+fill('black');
+Draw eyebrows;
+
+//Draw nose
+stroke('black');
+strokeWeight(4);
+Draw nose;
+
+//Draw mouth
+stroke(227, 93, 106);
+strokeWeight(7);
+Draw mouth;
+
+//Draw neck
+noStroke();
+fill(247, 221, 212);
+Draw mouth;
+
+//Draw body
+noStroke()
+fill(247, 221, 212);
+Draw body;
+
+//Draw clother
+noStroke()
+fill('red');
+Draw clother;
+
+//Draw hand
+stroke('black');
+Draw hand
+
+//Draw Hair
+noStroke();
+fill(32, 19, 19);
+Draw hair;
+
+//Change the background color (from white to yellow and vice versa)
+function mouseClick()
+IF value === 255 THEN
+   value = color(255,246,143);
+ELSE
+   value =255;
+
+LOOP
