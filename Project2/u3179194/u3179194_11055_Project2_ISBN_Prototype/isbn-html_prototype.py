@@ -1,5 +1,5 @@
 import sys
-import os2
+import os
 from pathlib import Path
 import webbrowser
 
