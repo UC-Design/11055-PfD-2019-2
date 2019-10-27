@@ -16,10 +16,10 @@ file_type = [("Text Files", ".txt")] #Only shows .txt files in the file explorer
 img = tkinter.PhotoImage(file="lib.gif") #assigns var to bg image location
 
 #Main function to read ISBNs and write out to HTML File
-def text_file_name_input():
+def text_file_name_input(): #Opens File Explorer to choose the .txt file
     TEXT_FILE_NAME = filedialog.askopenfilename(parent=window, initialdir = os.getcwd(),
-                                            title=" Select.txt file containing ISBN",
-                                            filetypes = file_type)
+                                                title=" Select.txt file containing ISBN",
+                                                filetypes = file_type)
     print(TEXT_FILE_NAME) #Prints file directory in CLI
     
     with open(TEXT_FILE_NAME) as isbnRead:
