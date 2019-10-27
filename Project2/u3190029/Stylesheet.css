@@ -1,7 +1,7 @@
 body, html {background-color: black;color: white;font-family: 'Playfair Display', sans-serif;letter-spacing: 5px;height: 100%;padding: 0px;margin: 0px;} 
  img {display: block;margin: 0 auto;height: 550px;} 
- .paralaxScroll {height: 350px;background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1453&q=80");background-size: cover;background-attachment: fixed;} 
- .paralaxScroll2 {height: 200px;background-image: url(lib.jpg);background-size: cover;background-attachment: fixed;} 
+.paralaxScroll {height: 350px;background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1453&q=80");background-size: cover;background-attachment: fixed;} 
+.paralaxScroll2 {height: 200px;background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1453&q=80");background-size: cover;background-attachment: fixed;} 
  h1 {font-size: 72px;text-align: center;margin: 0px;padding: 35px;font-weight: normal;} 
  h3 {text-align: center;} 
  .bgStyle {padding: 12px}a {color: #5e0000;} 
