@@ -4,9 +4,10 @@ import os.path
 import webbrowser
 
 # Menu for user to input ISBN number
-print ("Welcome to the menu")
-print ("1 Press 1 and Enter to add ISBN text file")
-print ("2 Press 2 and Enter to find books")
+print (" Welcome to the menu")
+print (" Made by U3181701")
+print (" Press 1 and Enter to add ISBN text file")
+print (" Press 2 and Enter to find books")
 
 input_method = int(input())
 
@@ -39,17 +40,17 @@ for isbn in read_lines:
 #Write HTML Tag 
 html_file.write ("</body></html>")
 
-# Close HTML file
+# Close HTML file - END LOOP 
 html_file.close()
 
 # Open webpage in a web browser
 # Using os.path.abspath
 webbrowser.open('file://' + os.path.abspath("ISBN.html"))
 
-# Close CSS File 
+# Close CSS File - END LOOP 
 StyleSheet_file.close()
 
-# Close Text File 
+# Close Text File - END LOOP 
 open_file.close()
 
 # Return Back to Menu
