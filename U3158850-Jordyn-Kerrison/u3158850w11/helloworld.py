@@ -9,8 +9,27 @@ print("Library")
 # write to the file
 # fileWrite
 # read from the file
-fileRead = open("ISBN.txt", "r")
+fileISBN = open("ISBN.txt", "r")
+fileHTML = open("index.html", "w")
+#fileCSS = open("styles.css", "w")
 # if statement to read the file
-if fileRead.mode == 'r':
-    content = fileRead.read()
+if fileISBN.mode == 'r':
+    content = fileISBN.read()
 print(content)
+
+
+fileHTML.write ("<html>")
+fileHTML.write ("<header> Library </header>")
+fileHTML.write ("<body>")
+# fileHTML.write ("<img src="http://covers.openlibrary.org/b/isbn/9780385533225-S.jpg"/>")
+
+fileHTML.write ("</body>")
+
+
+
+fileHTML.write ("</html>")
+
+#fileCSS.write (".header { font-size: 300px; }")
+fileHTML.close()
+fileISBN.close()
+
