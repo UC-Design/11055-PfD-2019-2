@@ -1,0 +1,45 @@
+START
+
+DO menu!
+
+    IF user_input = find_book! THEN
+
+        find_book!
+
+            DO user_input = text_file
+
+                IF text_file_exists! THEN
+
+                    ISBN_list = read_text_file!
+                    
+                    create_webpage!
+                    set_webpage_style! stylesheet
+                    
+                    load_API!
+
+                    FOR each_ISBN IN ISBN_list
+
+                        book_cover = API_get_book_cover! ISBN
+                        write_to_HTML! book_cover
+                    
+                    open_webpage!
+
+                    user_input_loop = false
+
+                ELSE user_input_loop = true
+
+            LOOP WHILE user_input_loop = true
+
+            menu_loop = true
+
+    ELSE IF user_input = quit! THEN
+
+        quit!
+
+            menu_loop = false
+
+    ELSE menu_loop = true
+
+LOOP WHILE menu_loop = true
+
+END
