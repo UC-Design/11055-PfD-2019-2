@@ -5,8 +5,6 @@ mynewfile=open("./isbn.html","w")
 
 #creates an array for lines in isbn file
 alllines = myfile.readlines()
-#prints array
-print(alllines)
 
 #open html
 mynewfile.write("<html>")
@@ -14,11 +12,12 @@ mynewfile.write("<html>")
 mynewfile.write("<body>")
 #writes heading
 mynewfile.write("<h1> Cover Art for Books </h1>")
-
-for alllines()<50
+#writes the image tag to isbn.html
+do
 mynewfile.write ('<img src="http://covers.openlibrary.org/b/isbn/'+alllines[0]+'-L.jpg"/>')
-
-#mynewfile.write ('<img src="http://covers.openlibrary.org/b/isbn/'+alllines[1]+'-L.jpg"/>')
+loop alllines[]
+#here I want to loop and check if there is another number/s if there is copy their ISBN number
+#if there is not I will continue with the rest of the program.
 #closes body
 mynewfile.write("</body>")
 #closes html
@@ -26,7 +25,7 @@ mynewfile.write("</html>")
 
 #closes isbn file
 myfile.close()
-#closes html file
+#closes isbn html file
 mynewfile.close()
 
-#mynewfile.write ('<img src="http://covers.openlibrary.org/b/isbn/'+alllines[0]+'-L.jpg"/>')
+
