@@ -1,0 +1,16 @@
+figure out what i'm looking for (maybe don't need to include this)
+Locate file 
+open file 
+create html file with included variables 
+DO 
+read line of file 
+record line of file 
+input line into HTML file variables 
+(write line into html file variables 
+	-cover img 
+	-author 
+	-title 
+	-page numbers 
+	-etc.)
+LOOP 
+close both files 

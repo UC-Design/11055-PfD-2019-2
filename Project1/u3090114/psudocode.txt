@@ -1,0 +1,83 @@
+Programming for design pseudocode.
+
+This program will call an external script and a local script to draw a portrait on screen. 
+All the face elements will be stored in their own functions and will be called in turn from bottom
+to top in layer order.
+
+	RUN scriptTest.html
+
+	CALL FUNCTION setup()
+		CREATE the canvas.
+		SET the canvas size.
+
+	CALL FUNCTION draw()
+		SET background color.
+		CALL function drawBody()
+		CALL function drawHead()
+		CALL function drawHair()
+		CALL function drawEyes()
+		CALL function drawSmile()
+		CALL function drawNose()
+
+	FUNCTION drawBody
+		remove the outline.
+		use a color to fill object.
+		draw a rectangle as the main shape of the body.
+		set color as the same as the background.
+		draw a triangle over both top corners to create shoulders.
+		//create some details.
+		set stroke color to black
+		draw two circles in the middle of the rectangle for buttons.
+		add a small arc for the pocket.
+		add a longer arc for the arm.
+		change color to a darker shade of the the rectangle.
+		draw some lines for shading.
+		change color to white.
+		draw triangles at the top for the collar.
+
+	FUNCTION drawHead
+		remove the outline.
+		use a color for the face.
+		draw a rectange and a triangle to create the shape of the face.
+		change color to pink
+		draw two circles to represent cheeks.
+		create some shading.		
+		create two quads for shading.
+		first quad runs down left side of the triangle. is lighter than the skin tone.
+		second quad runs down right side of the triangle. is darker than the skin tone.
+		add a stroke.
+		draw small arc above the bottom of the chin.
+		draw small circle to the right of the small arc.
+
+	FUNCTION drawHair
+		remove the outline.
+		use a color for hair color.
+		draw an arc at the top of the head rectangle.
+		draw a triangle on both corners of the arc for the sideburns.
+		change the color back to the headoutline color.
+		place some triangles in the base of the arc to break up the fringe.
+		use a line with a stroke fill to draw eyebrows below the fringe.
+		change the color of the stroke fill to yellow.
+		draw some lines in the hair to make highlights.
+		change the color of the stroke fill to black.
+		draw some lines in the hair to make shadows.
+
+	FUNCTION drawEyes
+		use a white color fill.
+		draw an ellipse below the left eyebrow.
+		draw an ellipse below the right eyebrow.
+		set color to black.
+		draw smaller circles in the eye ellipses to create the pupils.
+		set color back to white.
+		draw a smaller circle inside the pupils
+
+	FUNCTION drawSmile
+		set the stroke to black.
+		set the stroke weight to 4.
+		remove the color fill.
+		draw an arc between the eyes but lower down the head.
+
+	FUNCTION drawNose
+		set the stroke weight to 3.
+		draw an arc the goes almost full circle. 
+		place arc above the mouth between the eyes.
