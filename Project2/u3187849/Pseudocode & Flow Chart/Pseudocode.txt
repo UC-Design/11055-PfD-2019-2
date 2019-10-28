@@ -1,3 +1,5 @@
+START
+
 menu() FUNCTION
 
 	DO

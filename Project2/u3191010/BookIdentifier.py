@@ -35,10 +35,13 @@ while menu_loop == True:
                 open_file = open(file_name)
                 read_file = open_file.readlines()
 
+                # Create stylesheet
+                css_file = open("Style.css", "w+")
+                css_file.write("body, html {background-color: #552d1a; color: white; font-family: Courier New; height: 100%; padding: 0px; margin: 0px;} img {display: block; margin: 0 auto; height: 900px;} .background {height: 250px; background-image: url(https://wallpapercave.com/wp/wp2036897.jpg); background-size: cover; background-attachment: fixed;} .background1 {height: 450px; background-image: url(https://wallpapercave.com/wp/wp2036897.jpg); background-size: cover; background-attachment: fixed;} h1 {font-size: 72px; text-align: center; margin: 0px; padding: 35px; font-weight: normal;} h3 {text-align: center;} .bookdisplay {padding: 12px; padding-bottom: 30px;}")
+
                 # Create webpage
                 html_file = open("ISBN.html", "w+")
-
-                html_file.write("<html><head><title>Your Books</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\" /></head><div class=\"background\"></div><body><div><h1>Your Books</h1></div><div class=\"background1\"></div>")
+                html_file.write("<html><head><title>Your Books</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Style.css\" /></head><div><h1>Your Books</h1></div><body><div class=\"background1\"></div>")
 
                 # Repeat for every ISBN
                 for line in read_file:
@@ -52,6 +55,7 @@ while menu_loop == True:
                 webbrowser.open("ISBN.html", new = 2)
 
                 open_file.close()
+                css_file.close()
                 html_file.close()
 
                 print()
