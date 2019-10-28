@@ -7,15 +7,25 @@ html_start = """<html>
 html_finish = """</body>
 </html>"""
 
-# program
+isbn_start = '<img src="http://covers.openlibrary.org/b/isbn/'
+isbn_finish = '-S.jpg" />'
+html_error = "Error"
 
-#open isbn file for reading
+# Program
+
+#   Open isbn file for reading
 isbn_text = open("isbn.txt", "r")
 
-#  read all the lines into an array
+#  Read all the lines into an array
 totallines = isbn_text.readlines()
+#   Make x equal to the number of lines
+x = len(totallines)
+#   If x (number of lines) is equal to 0 (file has no lines)
+if x == 2:
+#  Print error message 
+    p1.write(html_error)
 
-#print(totallines)
+#   Print(totallines)
 
 #write opening html
 
@@ -24,7 +34,7 @@ p1.write(html_start)
 #write all the book stuff
 
 for xlines in totallines:
-    p1.write(xlines)
+    p1.write(isbn_start + xlines + isbn_finish)
 #    print (xlines)
 
 
