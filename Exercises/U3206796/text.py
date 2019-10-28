@@ -1,2 +1,2 @@
-myfile=open("one.txt","r")
+myfile=open("./one.txt","r")
 print (myfile.readline())
