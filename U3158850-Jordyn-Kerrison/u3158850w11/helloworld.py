@@ -4,12 +4,10 @@
     multiline comment
 """
 # print function
-print("hello world")
-#variable ccontaining int 21
-age = 21
-print("My name is Jordyn and I am" + str(age) + "years of age.")
+print("Library")
+
 # write to the file
-fileWrite
+# fileWrite
 # read from the file
 fileRead = open("ISBN.txt", "r")
 # if statement to read the file
