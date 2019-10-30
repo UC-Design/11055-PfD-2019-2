@@ -1,8 +1,8 @@
 /*
-    Ashwin Mayilvahanan 2019 
+    Ashwin Mayilvahanan 2019
     Programming for Design - Project 1
-    
-    This javascript file draws a self portrait 
+
+    This javascript file draws a self portrait
     adopting a continuous line approach using the p5 library
 */
 
@@ -199,7 +199,7 @@ function beardOutline() { // function that draws my beard outline using curveVer
 }
 
 function facialFeatures() { //draws features of my face including the eybrows using curveVertex vertice points with one continuous line
-  beginShape();             
+  beginShape();
   curveVertex(458,353);
   curveVertex(456,361);
   curveVertex(453,367);
@@ -425,7 +425,7 @@ function facialFeatures() { //draws features of my face including the eybrows us
   curveVertex(394,534);
   curveVertex(384,536);
   curveVertex(374,538);
-  curveVertex(366,542); 
+  curveVertex(366,542);
   curveVertex(354,544);
   curveVertex(342,547);
   curveVertex(328,546);

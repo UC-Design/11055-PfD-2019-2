@@ -1,0 +1,43 @@
+START
+
+DO WHILE loop_menu = true LOOP
+    
+    open_menu!
+    menu_option = get_user_input!
+
+    IF menu_option = find_books! THEN
+
+        file_input_loop = true
+
+        DO WHILE file_input_loop LOOP
+            file_address = get_user_input!
+            IF file_address_exists! THEN
+                BREAK
+        
+        ISBN_list = read!file_address
+
+        create_css_file!
+        create_HTML_file!
+
+        ISBN = first_ISBN_list_item
+
+        write_HTML_loop = true
+
+        DO WHILE write_HTML_loop LOOP
+            API = call_API!ISBN
+            book_cover = get_book_cover!API
+            write_to_HTML!book_cover
+            IF next_ISBN_exists! THEN
+                ISBN = next_ISBN_list_item
+                CONTINUE
+            ELSE BREAK
+
+        open_HTML_file!
+
+    ELSE IF menu_option = instructions! THEN
+
+        print_instructions!
+    
+    ELSE IF menu_option = quit! THEN
+
+        END
