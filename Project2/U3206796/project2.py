@@ -12,12 +12,10 @@ mynewfile.write("<html>")
 mynewfile.write("<body>")
 #writes heading
 mynewfile.write("<h1> Cover Art for Books </h1>")
-#writes the image tag to isbn.html
-do
-mynewfile.write ('<img src="http://covers.openlibrary.org/b/isbn/'+alllines[0]+'-L.jpg"/>')
-loop alllines[]
-#here I want to loop and check if there is another number/s if there is copy their ISBN number
-#if there is not I will continue with the rest of the program.
+#for statement creates a loop
+for lines in alllines:
+    #writes all lines image tags to isbn.html to create cover art on html page
+    mynewfile.write ('<img src="http://covers.openlibrary.org/b/isbn/'+lines+'-L.jpg"/>')
 #closes body
 mynewfile.write("</body>")
 #closes html
