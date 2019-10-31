@@ -75,7 +75,8 @@ while mainMenu == True:
         
         for bookNumber in openBook:
             htmlFile.write(quickDiv + "<img src=\"http://covers.openlibrary.org/b/isbn/" + bookNumber + "-M.jpg\" /><br><br>")
-            htmlFile.write("<b>ISBN no. : " + bookNumber + "</b>")
+            htmlFile.write("<b>ISBN no. : " + bookNumber + "</b> <br>")
+            htmlFile.write("More information can be found <a href=\"https://openlibrary.org/search?isbn=" + bookNumber + "&mode=everything\"> here</a>.")
             htmlFile.write("</div><br><br><br><br>")
             
         
