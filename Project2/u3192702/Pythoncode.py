@@ -1,5 +1,6 @@
 #PROJECT 2
 
+<<<<<<< Updated upstream
 #import the class book and open the ISBN text file and write a new html file
 import bookclass as bc
 import urllib.request as rq
@@ -49,6 +50,18 @@ file1.close()
 file2.close()
 
 #Melina Seserko / 3192702 / Programming for Design
+=======
+import bookclass as bc
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 
 
