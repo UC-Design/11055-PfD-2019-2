@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #PROJECT 2 _ APPEND BOOK INFORMATION TO HTML PAGE USING OPENLIBRARY API IN PYTHON
 
 #import the class 'bookclass'
@@ -64,5 +65,57 @@ file2.write("\n" + "<html>")
 #Close the both file1 and file2.
 file1.close()
 file2.close()
+=======
+#PROJECT 2
+
+import bookclass as bc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 #Melina Seserko / 3192702 _ Programming for Design
