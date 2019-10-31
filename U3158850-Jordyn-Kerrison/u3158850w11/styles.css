@@ -1,5 +1,3 @@
-/* montserrat font from google fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -50,10 +48,64 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+/* start of css file for library */
+
+
+body {
+    background-color: #fbfbfb;}
+
+header {
+    line-height: 5px;
+    padding-top: 20px;
+    padding-bottom: 30px;}
+
 h1 {
-    color: #94bbe2;
-    font-size: 300px;
+    font-family: Audrey, serif;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #d1964c;
+    padding-top: 50px;}
+
+h1 a {
+    text-decoration: none;
+    color: #d1964c;}
+
+h2 {
     font-family: 'Montserrat', sans-serif;
-}
+    text-align: center;
+    font-weight: light;
+    padding-top: 35px;
+    color: #753d4a;
+    font-size: 15px;
+    }
 
+div {
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #753d4a;
+    font-size: 12px;
+    }
+p {
+    padding-top: 20px;
+    }
 
+p a {
+    text-decoration: none;
+    color: #753d4a;}
+
+hr {
+    display: block;
+    margin-top: 65px;
+    }
+
+footer {
+    text-align: center;
+    color: #753d4a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    padding-bottom: 30px;}
