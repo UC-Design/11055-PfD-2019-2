@@ -22,8 +22,8 @@ def text_file_name_input(): #Opens File Explorer to choose the .txt file
                                                 filetypes = file_type)
     print(TEXT_FILE_NAME) #Prints file directory in CLI
     
-    with open(TEXT_FILE_NAME) as isbnRead:
-        lines = isbnRead.readlines()
+    with open(TEXT_FILE_NAME) as isbnRead: #Selected file is prepared for reading
+        lines = isbnRead.readlines() #read file line by line
         with open ("ISBN_Output.html", "w+") as isbnWrite: #Write out HTML
             isbnWrite.writelines("<html><head><title>Book Covers</title><link rel=\"stylesheet\" type=\"text/css\" href=\"Stylesheet.css\" /><link href=\"https://fonts.googleapis.com/css?family=Playfair+Display&display=swap\" rel=\"stylesheet\"/></head><body><div class=\"paralaxScroll\"></div><h1>Book Covers</h1><div class=\"paralaxScroll\"></div>")
             for x in lines: #loop for writing in ISBNs into HTML
@@ -36,7 +36,7 @@ def text_file_name_input(): #Opens File Explorer to choose the .txt file
                     cssWrite.writelines("a {color: #5e0000;} \n .footer {background-color: black;width: 100%;text-align: right;font: normal 20px;letter-spacing: 5px;font-family: 'Playfair Display', sans-serif;padding-top: 80px;padding-bottom:30px} \n .footer .footer-left p {color: white;font-size: 14px;margin: 0; padding-right:15px;}") 
     isbnRead.close
     isbnWrite.close
-    webbrowser.open('file://' + os.path.realpath("ISBN_Output.html"))
+    webbrowser.open('file://' + os.path.realpath("ISBN_Output.html")) #opens html file with default web browser 
 
 # Just the music functions
 def Music():
@@ -49,16 +49,16 @@ def restartMusic():
     winsound.PlaySound("painter.wav", winsound.SND_ASYNC)
 
 #Background Image
-backgroundLabel = tkinter.Label(image=img).place(x=0, y=0, relwidth=1, relheight=1)
+tkinter.Label(image=img).place(x=0, y=0, relwidth=1, relheight=1)
 
 #Main Heading
-Heading = tkinter.Label(window, text = "Book Cover Finder", bg = "#5e0000", fg = "white", font = ("Helvetica", 24)).pack(pady=20)
+tkinter.Label(window, text = "Book Cover Finder", bg = "#5e0000", fg = "white", font = ("Helvetica", 24)).pack(pady=20)
 
 #Buttons
-buttonCreate = tkinter.Button(text = "Find ISBN File & Create HTML Page", fg = "white", bg = "#855020", command = text_file_name_input, font = ("Helvetica", 12)).pack(pady=10,side=tkinter.TOP)
-buttonStop = tkinter.Button(text = "Stop Music", fg = "white", bg = "#5e0000", command = stopMusic, font = ("Helvetica", 12)).pack(pady=5,side=tkinter.BOTTOM)
-buttonRestart = tkinter.Button(text = "Restart Music", fg = "white", bg = "#5e0000", command = restartMusic, font = ("Helvetica", 12)).pack(side=tkinter.BOTTOM)
+tkinter.Button(text = "Find ISBN File & Create HTML Page", fg = "white", bg = "#855020", command = text_file_name_input, font = ("Helvetica", 12)).pack(pady=10,side=tkinter.TOP)
+tkinter.Button(text = "Stop Music", fg = "white", bg = "#5e0000", command = stopMusic, font = ("Helvetica", 12)).pack(pady=5,side=tkinter.BOTTOM)
+tkinter.Button(text = "Restart Music", fg = "white", bg = "#5e0000", command = restartMusic, font = ("Helvetica", 12)).pack(side=tkinter.BOTTOM)
 
 Music() #plays music in background
 
-window.mainloop() 
+window.mainloop()
