@@ -1,0 +1,32 @@
+body{
+    background-color: #fff2e6;
+    color: #b07c4c;
+}
+
+h1{
+    padding-top: 30px;
+    color: #8a5c32;
+}
+
+hr{
+    margin-top:5px;
+    margin-bottom:5px;
+    border-color: #805126;
+}
+
+.scrolly{
+    height: 200px;
+    background-image: url(https://i.pinimg.com/originals/7a/43/9b/7a439bf362b8ad1807145c4e3de7c47e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.p1{
+    text-align: center;
+    font-size: 16px;
+    height: 160px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    color: #8a5c32;
+}
