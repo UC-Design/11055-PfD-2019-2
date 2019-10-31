@@ -1,22 +1,11 @@
-# first python program
-# to write a ccomment use a hash
-"""
-    multiline comment
-"""
+#Libraries for webpage
 
-#read from the existing file
-fileISBN = open("ISBN.txt", "r")
-#write the html file
-fileHTML = open("index.html", "w")
+import webbrowser
+import os
+
+
 fileCSS = open("styles.css", "w")
-# if statement to read the file
-if fileISBN.mode == 'r':
-    content = fileISBN.read()
-print(content)
-
-cssmessage = """/* montserrat font from google fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
+fileCSS.write("""
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,41 +55,122 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+/* start of css file for library */
+
+
+body {
+    background-color: #fbfbfb;}
+
+header {
+    line-height: 5px;
+    padding-top: 20px;
+    padding-bottom: 30px;}
+
 h1 {
-    color: #94bbe2;
-    font-size: 300px;
+    font-family: Audrey, serif;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #d1964c;
+    padding-top: 50px;}
+
+h1 a {
+    text-decoration: none;
+    color: #d1964c;}
+
+h2 {
     font-family: 'Montserrat', sans-serif;
-}
+    text-align: center;
+    font-weight: light;
+    padding-top: 35px;
+    color: #753d4a;
+    font-size: 15px;
+    }
+
+div {
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #753d4a;
+    font-size: 12px;
+    }
+p {
+    padding-top: 20px;
+    }
+
+p a {
+    text-decoration: none;
+    color: #753d4a;}
+
+hr {
+    display: block;
+    margin-top: 65px;
+    }
+
+footer {
+    text-align: center;
+    color: #753d4a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    padding-bottom: 30px;}
+""")
 
 
-"""
+#read from the existing file
+fileISBN = open("ISBN.txt", "r")
+#write the html file
+fileHTML = open("index.html", "w")
 
-#writing the css message
-fileCSS.write(cssmessage)
-
-#writing a message to write to the file
-htmlmessage = """<!doctype html>
+fileHTML.write("""
+<!doctype html>
 <html lang="en">
 
 <head>
-    <link href="u3158850w11/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
+<style>@import url('https://fonts.googleapis.com/css?family=Montserrat:400&display=swap');
+@font-face {font-family: Audrey; src: url('Audrey-Normal.otf');}
+</style>
+
+
+
 </head>
 
 <body>
 
-<h1> The Library is Open!</h1>
+<header>
+<h1><a href="index.html">LIBRARY</a></h1>
+<h2>YOUR BOOKS</h2>
+</header>
 
-<p>Results:</p>
+""")
 
+
+
+
+
+for line in fileISBN:
+    fileHTML.write("<div><img width=\"20%\" src=\"http://covers.openlibrary.org/b/isbn/" + str(line) + ".jpg\" />")
+    fileHTML.write("<p><a href=\"http://openlibrary.org/isbn/" + line +"\" target=\"_blank\">MORE INFORMATION " + line + "</a></p></div><hr>")
+    fileHTML.write("<br>")
+
+
+fileHTML.write("""
 </body>
-</html>"""
+<footer>
+<p>Jordyn Kerrison | U3158850 <br> University of Canberra</p>
+</footer>
 
-#writing the html message
-fileHTML.write(htmlmessage)
+</html>""")
 
 #closing the files
 fileHTML.close()
 fileISBN.close()
 fileCSS.close()
+
+#open browser instead of python shell
+webbrowser.open("file://" + os.path.realpath("index.html"))
 
