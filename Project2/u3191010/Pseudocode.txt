@@ -1,45 +1,43 @@
 START
 
-DO menu!
+DO WHILE loop_menu = true LOOP
+    
+    open_menu!
+    menu_option = get_user_input!
 
-    IF user_input = find_book! THEN
+    IF menu_option = find_books! THEN
 
-        find_book!
+        file_input_loop = true
 
-            DO user_input = text_file
+        DO WHILE file_input_loop LOOP
+            file_address = get_user_input!
+            IF file_address_exists! THEN
+                BREAK
+        
+        ISBN_list = read!file_address
 
-                IF text_file_exists! THEN
+        create_css_file!
+        create_HTML_file!
 
-                    ISBN_list = read_text_file!
-                    
-                    create_webpage!
-                    set_webpage_style! stylesheet
-                    
-                    load_API!
+        ISBN = first_ISBN_list_item
 
-                    FOR each_ISBN IN ISBN_list
+        write_HTML_loop = true
 
-                        book_cover = API_get_book_cover! ISBN
-                        write_to_HTML! book_cover
-                    
-                    open_webpage!
+        DO WHILE write_HTML_loop LOOP
+            API = call_API!ISBN
+            book_cover = get_book_cover!API
+            write_to_HTML!book_cover
+            IF next_ISBN_exists! THEN
+                ISBN = next_ISBN_list_item
+                CONTINUE
+            ELSE BREAK
 
-                    user_input_loop = false
+        open_HTML_file!
 
-                ELSE user_input_loop = true
+    ELSE IF menu_option = instructions! THEN
 
-            LOOP WHILE user_input_loop = true
+        print_instructions!
+    
+    ELSE IF menu_option = quit! THEN
 
-            menu_loop = true
-
-    ELSE IF user_input = quit! THEN
-
-        quit!
-
-            menu_loop = false
-
-    ELSE menu_loop = true
-
-LOOP WHILE menu_loop = true
-
-END
+        END
