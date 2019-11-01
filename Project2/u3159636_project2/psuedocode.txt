@@ -14,7 +14,7 @@ WHILE True
 		ENDFOR
 		
 		CLOSE html file
-		Generate the html file on web browser
+		Generate the final html file on web browser
 	EXCEPT
 		PRINT "Oops! Something went wrong!"
 
