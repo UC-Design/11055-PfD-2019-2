@@ -1,0 +1,44 @@
+START
+
+Define what the variables are for Python file
+
+DO Open Python File
+
+DO Locate ISBN.txt file
+
+If ISBN.txt Text_File_Exists THEN read_text_file
+
+Create_HTML_Page
+
+Open HTML Page
+
+Create_StyleSheet
+
+DO Link CSS to HTML Page 
+
+LOOP HTML file with fhtml variable
+
+Load_Open_Libary_API
+
+Book library + lines in the txt file + size of the cover art = Print_Cover_To_Webpage
+
+Open_Website
+
+LOOP Until no more ISBN numbers exist
+
+Save Html File
+
+Save CSS File
+
+Save txt file
+
+Close CSS File
+
+Close txt File
+
+Close HTML File
+
+END PROGRAM
+
+
+
