@@ -62,7 +62,7 @@ table {
 
 
 body {
-    background-color: #fbfbfb;}
+    background-color: #efe9db;}
 
 header {
     line-height: 5px;
@@ -93,9 +93,13 @@ h2 {
 div {
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
     font-family: 'Montserrat', sans-serif;
     color: #753d4a;
     font-size: 12px;
+    background-color: #fbfbfb;
+    margin-left: 200px;
+    margin-right: 200px;
     }
 p {
     padding-top: 20px;
@@ -105,17 +109,71 @@ p a {
     text-decoration: none;
     color: #753d4a;}
 
-hr {
+p a:hover {
+    color: #dbab61;}
+
+.books-para {
+    text-align: center;
+    color: #4b553a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #fbfbfb;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    }
+
+/* hr {
     display: block;
     margin-top: 65px;
-    }
+    } */
 
 footer {
     text-align: center;
     color: #753d4a;
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
-    padding-bottom: 30px;}
+    padding-bottom: 20px;}
+
+/* css for help file */
+nav {
+    text-align: center;
+    margin-top: 30px;
+    }
+
+nav ul li {
+    display: inline;
+    text-align: center;
+    }
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #753d4a;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+nav ul li a:hover {
+    color: #dbab61}
+
+/* help page styles*/
+
+.help-page {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #4b553a;
+    background-color: #fbfbfb;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    padding-bottom: 190px;
+    padding-top: 190px;
+    }
+
 """)
 
 
@@ -134,17 +192,24 @@ fileHTML.write("""
 <style>@import url('https://fonts.googleapis.com/css?family=Montserrat:400&display=swap');
 @font-face {font-family: Audrey; src: url('Audrey-Normal.otf');}
 </style>
-
-
-
 </head>
 
 <body>
 
 <header>
 <h1><a href="index.html">LIBRARY</a></h1>
-<h2>YOUR BOOKS</h2>
+
+<nav>
+    <ul>
+        <li><a href="index.html">BOOKS</a><li>
+        <li><a href="help.html">HELP</a></li>
+    </ul>
+</nav>
+
 </header>
+
+<p class="books-para"> This page records and displays the book covers in
+the ISBN.txt file. <br> enjoy!</p>
 
 """)
 
@@ -154,7 +219,7 @@ fileHTML.write("""
 
 for line in fileISBN:
     fileHTML.write("<div><img width=\"20%\" src=\"http://covers.openlibrary.org/b/isbn/" + str(line) + ".jpg\" />")
-    fileHTML.write("<p><a href=\"http://openlibrary.org/isbn/" + line +"\" target=\"_blank\">MORE INFORMATION " + line + "</a></p></div><hr>")
+    fileHTML.write("<p><a href=\"http://openlibrary.org/isbn/" + line +"\" target=\"_blank\">MORE INFORMATION " + line + "</a></p></div>")
     fileHTML.write("<br>")
 
 
@@ -163,8 +228,8 @@ fileHTML.write("""
 <footer>
 <p>Jordyn Kerrison | U3158850 <br> University of Canberra</p>
 </footer>
-
 </html>""")
+
 
 #closing the files
 fileHTML.close()
