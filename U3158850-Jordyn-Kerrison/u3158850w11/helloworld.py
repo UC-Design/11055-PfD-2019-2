@@ -1,7 +1,9 @@
 #Libraries for webpage
 
+#imports to open browser automatically
 import webbrowser
 import os
+
 
 
 fileCSS = open("styles.css", "w")
@@ -71,7 +73,7 @@ header {
 
 h1 {
     font-family: Audrey, serif;
-    font-size: 80px;
+    font-size: 100px;
     letter-spacing: 2px;
     text-align: center;
     color: #d1964c;
@@ -97,10 +99,36 @@ div {
     font-family: 'Montserrat', sans-serif;
     color: #753d4a;
     font-size: 12px;
-    background-color: #fbfbfb;
     margin-left: 200px;
     margin-right: 200px;
     }
+
+.hero-image {
+    background-image: url("assets/images/heroimage.jpg");
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+
+.hero-text{
+    color: #fbfbfb;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #4b553a;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 40px;
+    }
+
 p {
     padding-top: 20px;
     }
@@ -111,19 +139,6 @@ p a {
 
 p a:hover {
     color: #dbab61;}
-
-.books-para {
-    text-align: center;
-    color: #4b553a;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    background-color: #fbfbfb;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 50px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    }
 
 /* hr {
     display: block;
@@ -179,6 +194,7 @@ nav ul li a:hover {
 
 #read from the existing file
 fileISBN = open("ISBN.txt", "r")
+
 #write the html file
 fileHTML = open("index.html", "w")
 
@@ -207,9 +223,13 @@ fileHTML.write("""
 </nav>
 
 </header>
+<div class="hero-image">
+    <div class="hero-text">
+        <h3>WELCOME TO YOUR LIBRARY</h3>
+    </div>
+</div>
 
-<p class="books-para"> This page records and displays the book covers in
-the ISBN.txt file. <br> enjoy!</p>
+<h4>BOOKS</h4>
 
 """)
 
@@ -218,10 +238,9 @@ the ISBN.txt file. <br> enjoy!</p>
 
 
 for line in fileISBN:
-    fileHTML.write("<div><img width=\"20%\" src=\"http://covers.openlibrary.org/b/isbn/" + str(line) + ".jpg\" />")
+    fileHTML.write("<div><img width=\"40%\" src=\"http://covers.openlibrary.org/b/isbn/" + str(line) + ".jpg\" />")
     fileHTML.write("<p><a href=\"http://openlibrary.org/isbn/" + line +"\" target=\"_blank\">MORE INFORMATION " + line + "</a></p></div>")
     fileHTML.write("<br>")
-
 
 fileHTML.write("""
 </body>
