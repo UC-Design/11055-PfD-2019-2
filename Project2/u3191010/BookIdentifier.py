@@ -37,7 +37,7 @@ while loop_true:
 
                 # Create stylesheet
                 css_file = open("Style.css", "w+")
-                css_file.write("body, html {background-color: #3b1d0f; color: white; font-family: Courier New; height: 100%; padding: 0px 25px; margin: 0px;} img {display: block; margin: 0 auto; height: 900px;} .background {height: 250px; background-image: url(https://wallpapercave.com/wp/wp2036897.jpg); background-size: cover; background-attachment: fixed;} .background1 {height: 450px; background-image: url(https://wallpapercave.com/wp/wp2036897.jpg); background-size: cover; background-attachment: fixed;} h1 {font-size: 72px; text-align: center; margin: 0px; padding: 35px; font-weight: normal;} .bookdisplay {padding-top: 12px; padding-bottom: 30px;} footer {padding-bottom: 1px;}")
+                css_file.write("body, html {background-color: #3b1d0f; color: white; font-family: Courier New; height: 100%; padding: 0px 25px; margin: 0px;} img {display: block; margin: 0 auto; height: 900px;} .background {height: 250px; background-image: url(https://wallpapercave.com/wp/wp2036897.jpg); background-size: cover; background-attachment: fixed;} .background1 {height: 450px; background-image: url(https://wallpapercave.com/wp/wp2036897.jpg); background-size: cover; background-attachment: fixed;} h1 {font-size: 72px; text-align: center; margin: 0px; padding: 35px; font-weight: normal;} .bookdisplay {padding-top: 12px; padding-bottom: 12px; text-align: center;} footer {padding-bottom: 1px;}")
 
                 # Create webpage
                 html_file = open("ISBN.html", "w+")
@@ -46,7 +46,7 @@ while loop_true:
                 # Repeat for every ISBN
                 for line in read_file:
                     # Call API and print book cover to webpage
-                    html_file.write("<div class=\"bookdisplay\"><h3>" + line + "</h3><img src=\"http://covers.openlibrary.org/b/isbn/" + line + "-L.jpg\" /></div><div class=\"background\"></div>")
+                    html_file.write("<div class=\"bookdisplay\"><h3 style=\"text-align: left;\">" + line + "</h3><img src=\"http://covers.openlibrary.org/b/isbn/" + line + "-L.jpg\" /><br /><h3><a href=\"https://openlibrary.org/isbn/" + line + "\">More</a></h3></div><div class=\"background\"></div>")
 
                 html_file.write("<footer><p>&copy Rafi Rahman - 2019</p></footer></body></html>")
 
