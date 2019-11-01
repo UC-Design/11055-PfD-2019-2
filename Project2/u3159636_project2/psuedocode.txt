@@ -1,6 +1,5 @@
-IMPORT OS
 IMPORT web browser
-IMPORT API google
+IMPORT googleAPI 
 
 WHILE True
 	TRY
