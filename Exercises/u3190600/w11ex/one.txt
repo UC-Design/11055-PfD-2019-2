@@ -1,0 +1,4 @@
+names = ["Emma", "Katie", "Amanda"]
+names.reverse()
+for x in names:
+    print (x)
