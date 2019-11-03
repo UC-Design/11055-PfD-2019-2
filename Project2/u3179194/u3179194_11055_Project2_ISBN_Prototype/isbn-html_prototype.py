@@ -1,5 +1,5 @@
 import sys
-import os2
+import os
 from pathlib import Path
 import webbrowser
 
@@ -28,7 +28,7 @@ html_file = open("index.html", "w+")
 
 # Write html elements (prior to iterating lines in data variable list) for index.html and embedded css styles.
 html_file.write(
-    "<html><head><title>Your Books</title></head><body><style type=\"text/css\">body{background:#cce0e0;}#container{display:grid;grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));grid-template-rows:auto;grid-gap:50px;justify-items:center;padding:20px;}span{color:#333333;}h3{font-size:1.5em;color:#555555;text-align:center;}h1{color:#1f81fede;font-family:'Lato', sans-serif;font-size:5em;font-weight:700; line-height:70px; margin:60px 0;text-align:center;text-shadow:0 2px white, 0 3px #777; }img{display:block;height:600px;width:500px}</style><h1>Your Books</h1><div id=\"container\">")
+    "<html><head><title>ISBN Booksearch</title></head><body><style type=\"text/css\">body{background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(architecture-books-bookshelves-1261180.jpg);background-size: contain;}#container{display:grid;grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));grid-template-rows:auto;grid-gap:50px;justify-items:center;padding:20px;}span{color:#c5b8b8;}h3{font-size:1.5em;color:#c5b8b8;text-align:center;}h1{color: #1f77fe7a;font-family:'Lato', sans-serif;font-size:5em;font-weight:700; line-height:70px; margin:60px 0;text-align:center;text-shadow:0 2px white, 0 3px #777; }img{display:block;height:600px;width:500px}</style><h1>Your Book Selection</h1><div id=\"container\">")
 
 # Repeat for every ISBN in isbn.txt or list input by user (data)
 for isbn in data:

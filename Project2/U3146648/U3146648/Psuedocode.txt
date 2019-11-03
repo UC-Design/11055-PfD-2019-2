@@ -1,0 +1,20 @@
+START
+    
+    Define the variables
+
+DO Locate the ISBN.txt file (r file)
+
+    Create the ISBN.html file (w file)
+
+LOOP The html file using fhtml variable 
+
+    Write the book's cover image to HTML file
+    Write the book's title to HTML file
+
+    Create the CSS file (stylesheet.CSS) and link to html file
+
+    Save and close files
+
+
+
+    
