@@ -1,0 +1,34 @@
+pseudo code by Gary Richardson U3090114
+
+Intall requests module.
+Import json, requests, and tkinter.
+
+create file dialog box in tkinter to read in a text file.
+
+create a variable to store the text file.
+
+read the stored text file line by line and append to an array making sure to remove any trailing that characters.
+
+create a mocked up template of the html file. only create the top; html, title, head and link.
+
+create a mocked up template of the bottom of the html file. the closing div, body, footer and html.
+
+create a for loop that will read the array line by line.
+in the for loop
+write the html file.
+append the mocked up template from previously (top only).
+
+use a requests.get() method call the first isbn from the array for the http request.
+create a local json variable to capture the request.
+write the title of the book in the page header. the title is held in the json dictionary. circle through until you find  volumeinfo/title.
+
+set up a grid container to layout the page elements.
+
+pull the cover art from openlibrary.org by appending the isdn to the search. grab the image and put it in a src img tag.
+use the json variable to gather the remaining information such as author and description. Append these to minor headings.
+
+add the mocked up template of the bottom half of the page. 
+close the webpage.
+
+Iterate through the for loop until all rows of the array have been made into webpages.
+close the program.
