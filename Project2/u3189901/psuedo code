@@ -1,0 +1,24 @@
+START
+
+Import urllib
+Import json
+Import textwrap
+
+DO
+
+Create Google API Variables
+Create Line Number to read line variable
+Create HTML file writer
+
+DO WITH open ISBN.txt read all lines (Auto close)
+DO Write new .HTML base page (index)
+
+DO For Lines in ISBN.txt
+
+DO With ISBN.txt read through ISBN Google Books API
+DO Print Volume Info in console
+DO Write data from collected API data into html_site
+
+LOOP until EOF
+
+END
