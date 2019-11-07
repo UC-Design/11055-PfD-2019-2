@@ -37,13 +37,14 @@ function draw (){
     
     
     
-    if (mouseIsPressed){
+    }
+    
+    function mouseClicked () {
         traffic++;
         if (traffic>3){
             traffic = 1;
         }
-    }
-  
+     
     
 }
 

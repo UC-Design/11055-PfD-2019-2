@@ -1,0 +1,19 @@
+START
+
+DO UserInput = fileName
+	IF fileName exists THEN
+		ReadTextFile = ISBN LIST
+		Write webPage beginner
+		FOR everyISBN in ISBN LIST
+			Write ISBN
+			BookCover from site
+			Tile from api
+			Author on website
+			Display more info button
+		Write closing of webpage
+		openWebPage in default browser
+		Close Files in python
+		break
+	else
+		prompt user for input again
+END

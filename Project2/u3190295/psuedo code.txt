@@ -1,0 +1,26 @@
+filename = open("ISBN.txt", "rt")
+
+for xlines in filename:
+     print(xlines[0])? - display one line at a time to keep as a variable
+
+html = open("webpage containing links to other webpages.html", "a")
+
+variable list for html code and links
+
+html.write(variable + xlines[0] + another variable containing link to a website containing book info)
+
+html.write(variable + xlines[1] + another variable containing link to a website containing book info)
+
+html.close()   - Don't need it opened if were opening in web browser right?
+
+import webbrowser
+webbrowser.open(webpage containing links to other webpages.html)?
+
+And then that should open a html page which should display IBSN numbers next to related links.
+E.g
+
+Line one of ISBN.txt - Link to website
+Line two of ISBN.txt - Link to different website
+
+
+

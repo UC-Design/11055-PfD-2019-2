@@ -1,0 +1,31 @@
+Start project.py
+
+open file - declaration
+html = "formatting" - text / string
+
+	While mainMenu = true //while menu is active
+		Loop :
+		Menu 
+		    Info, catalogue (initiates book html), quit program
+		
+		do input() = int
+
+		if input () = 1 :
+			Short info on what program is about
+
+		else if input () = 2 :
+			open isbn file
+			read isbn lines
+			write to html file
+			open html to browser
+			close files
+
+		else if input () = 3 :
+			exit program
+			end menu loop
+	
+		else : 	
+		print blank line
+		loop menu forever
+
+End

@@ -1,0 +1,181 @@
+/* navigation */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #fff;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+background {
+    
+    
+    background-image: <img src="assets/images/book_logo.jpg"
+}
+
+/* font styles  */
+
+strong {
+    font-weight: bold;
+}
+
+/* paragragraphs */
+
+p {
+    font-size: 13px;
+    color: #191927;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #191927;
+    text-align: center;
+}
+
+/* Page Breaks (Line) */
+hr {
+    size: 1px;
+    width: 500px;
+    border-color: #c80e68;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    background-color: #007aa5;
+    overflow: auto;
+
+}
+
+
+ul {
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none
+}
+
+li {
+    float: right
+}
+
+
+/* Logo preferences */
+
+.logo img {
+
+    position: sticky;
+    margin-top: 2px;
+    margin-left: 30px;
+    width: 10%;
+}
+
+nav a {
+
+    width: 100px;
+    display: block;
+    padding: 30px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    color: white;
+    text-align: center
+}
+
+/* Navigation Hover preferences */
+nav a:hover {
+
+    background: #c80e68;
+    transition: 0.5s;
+    text-transform: uppercase
+}
+
+
+.hero-image img {
+
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/*header preferences  */
+
+h1 {
+    font-weight: 150;
+    color: #c80e68;
+    shape-margin: 20px;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+h2 {
+    font-weight: 300;
+    color: #ec8a00;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #ec8a00;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 24px;
+    color: #c80e68;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Link to the Open Library Covers website */
+.button-2 {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #c80e68;
+    color: #c80e68;
+    border-radius: 3px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+/* Mouse Hover */
+.button-2:hover {
+    background-color: #c80e68;
+    color: #fff;
+}
+
+/* Footer properties */
+
+
+footer {
+    padding: 60px 0;
+    background-color: #007aa5
+}
+
+#footer-info {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
