@@ -1,15 +1,13 @@
 START
 
-DO WHILE loop_menu = true LOOP
+DO WHILE loop_true LOOP
     
     open_menu!
     menu_option = get_user_input!
 
     IF menu_option = find_books! THEN
 
-        file_input_loop = true
-
-        DO WHILE file_input_loop LOOP
+	DO WHILE loop_true LOOP
             file_address = get_user_input!
             IF file_address_exists! THEN
                 BREAK
