@@ -1,0 +1,72 @@
+/* Body of html page, including background colour and font family */
+body, html {
+    background-color: #dba084;
+    color: black;
+    font-family: V;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* how the book covers are displayed */
+.covers {
+    display: inline;
+    margin: 50px;
+    height: 900px;
+    padding: 10px;
+    border-spacing: 10px; 
+
+}
+
+/* Image of the bookshelves, background rolls over image */
+.background {
+    height: 1000px;
+    background-image: url(bookshelves.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+/* Styles for heading 1 which is the "ISBN Book Library"*/
+h1 {
+    font-size: 100px;
+    position: absolute;
+    top: 50px;
+    left: 520px;
+    transform: translate(-40%, -40%);
+    font-weight: bold;
+    word-spacing: 30px;
+    background-color:#ceecff;
+    background position: center;
+
+}
+
+/* How the books are displayed */
+.bookdisplay {
+    padding: 12px;
+    padding-bottom: 30px;
+    display: table; 
+}
+
+
+/* This is the footer for the html page. 
+It contains a small blue footer which matches with the 
+background in the title of the page. 
+
+The footer contains details on that this was completed for Programming for Design by 
+student U3146011. */
+
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 40px;
+   background-color: #ceecff;
+   color: black;
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 30px;
+   text-align: center;
+   word-spacing: 30px;
+
+}

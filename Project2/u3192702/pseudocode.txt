@@ -1,0 +1,35 @@
+PROJECT 2 _ APPEND BOOK INFORMATION TO HTML PAGE USING OPENLIBRARY API IN PYTHON
+    - PSEUDOCODE -
+--------------------------------------------------------------------------------
+
+import the class 'bookclass' as bc.
+import urllib.request as rq and json to retrieve data from openlibrary API.
+
+Write a new html file and name it 'bookpage.html' and open the 'ISBN.txt' file as a read file.
+
+Create HTML tags inside 'bookpage.html' (file2) to hold API data retrieved from openlibrary API.
+
+Create a variable called 'array' that reads file1 (ISBN.txt). 
+
+Create an empty variable called 'array1' :
+For the isbn in the variable array, append the variable "array1" and the class "bc" and book to it.
+    Inside curved brackets,add isbn and three other placeholder characters to append the ISBN.txt contents too.
+    for file2, write an image tag in curved brackets and append isbn to show book covers.
+
+    Create a variable called gbook containing the urllib request imported at the beginning of the program.
+        Write bookcovers to 'bookpage.html' in an image tag. Insert image url after '<img src =' . 
+            Inside the gbook variable, open a openlibrary url that requests data from the openlibrary API for the bookcover image.
+            Run the isbn file (ISBN.txt) through the url by adding + isbn + after 'isbn/' and before '-L.jpg' in the image tag.
+
+    Create a variable called 'bk' that loads the gbook url using a json request.
+    Create another variable named 'bid' containing the string, 'ISBN:'
+        Add an isbn.strip that returns a copy of the 'ISBN:' string.
+        Write new data to 'file2' that contains 'bk' and 'bid' variable and reads the API    data retrieved from the OpenLibrary API.
+        Locate and add data from the API (e.g. 'title') and write them to 'file2'  on separate lines. 
+ 
+
+Close 'bookpage.html', 'file1' and 'file2'.
+
+--------------------------------------------------------------------------------
+
+Melina Seserko / 3192702 _ Programming for Design _ pseudocode

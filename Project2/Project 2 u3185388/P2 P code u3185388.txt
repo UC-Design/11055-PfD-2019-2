@@ -1,0 +1,51 @@
+import urllib.request
+import json
+import textwrap
+import webbrowser
+
+while True:
+    base_api_link = "https://www.googleapis.com/books/v1/volumes?q=isbn:"
+    base_img_link = "http://covers.openlibrary.org/b/isbn/"
+    user_input = input("Enter ISBN 13: ").strip()
+    
+    try: # check input value only for the numbers
+        input is numbers
+    except ValueError:
+        print("\nERROR! Please type the correct ISBN 13." + "\n")
+        continue
+    
+    if the length of the input is 13: # check the length of the input value
+        
+        with urllib.request.urlopen(base_api_link + user_input) as f:
+            
+            text = f.read() 
+            decoded_text = text.decode("utf-8")
+            obj = json.loads(decoded_text)
+            volume_info = obj["items"][0]
+            authors = obj["items"][0]["volumeInfo"]["authors"]
+            
+            # display book information in Python
+            receive book information (title, summary, author, publisher, published date, page count, and language) and display
+            
+            # display book information in html
+            image link
+            
+            # create a table
+            create a table, having 420*196 image, title, summary, author, publisher, published date, page count, and language
+            
+            # generate html file
+            write into html file, called "Project2 - u3185388.html"
+
+            # automatically open html file
+            open the html file with browser
+
+            # type another ISBN 13 or exit
+            asking user to reinput or exit
+            
+            if user type n:
+                print("\nThank you! Have a good one." + "\n")
+                system exit
+                break
+            
+    else:
+            print("\nERROR! Please type the correct ISBN 13." + "\n")

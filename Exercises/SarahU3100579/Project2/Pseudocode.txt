@@ -1,0 +1,29 @@
+START PROGRAM 
+Define information that you're looking for 
+Prompt user to input file
+If user has input file  -continue -not Display error - prompt user to input file 
+If Files can be found - continue - display error - Prompt user to input file
+If File can be opened - open ISBN txt file - not - display error - prompt user to input file 
+(Open)
+Create CSS file 
+Create HTML file for all books 
+Create HTML file for individual books 
+If files can be read- continue - if not display error - promt user to input file 
+IF the number of lines is less than 1000 - read up to 1000 lines of isbn txt - if not display error, and read up to 1000 lines of isbn txt
+Loop - read up to 1000 lines ...etc.
+Read line
+record line 
+input line (variables into html file)
+If info can be foundm display on file, if not, display error then Display on file.
+End loop 
+--
+Loop
+If a new value is submitted into the isbn search bar (html)
+record input from search bar 
+else display error, then close files, end program 
+If input is a correct isbn - input ibsn from search bar into variables into html file for individual books (rewrite)
+else display error, then close files and end program 
+if info can be retrieved -info is displayed on html page 
+else dispay error - close files 
+Close files
+End program

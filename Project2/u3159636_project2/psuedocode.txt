@@ -1,0 +1,25 @@
+IMPORT web browser
+IMPORT googleAPI 
+
+WHILE True
+	TRY
+		PRINT "Please enter the name file: "		
+		INPUT isbntext file
+		READ isbnfile by line
+		OPEN html file
+		WRITE html file
+		
+		FOR each isbn number in the INPUT
+			search the information based on the isbn number by using API
+		ENDFOR
+		
+		CLOSE html file
+		Generate the final html file on web browser
+	EXCEPT
+		PRINT "Oops! Something went wrong!"
+
+	PRINT "Do you want to add new file? Y or N"
+	IF INPUT == N
+	PRINT "Thank you"
+	BREAK
+ENDWHILE
