@@ -1,0 +1,243 @@
+Your prototype will read a provided file that contains a list of book isbn numbers. 
+Using python, it will then generate a html page(s) that displays information about the books in a format of your choosing.
+
+Assessment criteria
+-Creativity of approach.
+-Application of appropriate programming concepts.
+-Quality and clarity of the code, including formatting and consistency.
+-Visual presentation and communication.
+-Ability to explain your approach (demonstrated through a flow chart, pseudocode, comments in your code and a final reflection on the work).
+
+
+
+REMEMBER THE FLOW CHART AND PSEUDOCODE ARE ABOUT 1/2 THE MARKS 
+is it creative? or have you just done the bare minimum? or the same as everybody else?
+have you correctly applied the thing's we've been learning in class?
+is your code done well, correctly, no errors, clear formatting?
+is it well presented? have you used css and good presentation/communication?
+have you explained your approach with comments, flow chart, pseudocode? does your flow chart and pseudocode match your programming?
+
+
+
+
+a dialog box to find the file 
+read the file (using error code) 
+display basic info well presented on main page. with some css 
+an accurate and detailed flowchart and pseudocode
+detailed comments explaining the work 
+
+
+can i do something fancy with css like have a detailed sort of info but have collapsable sections so it's all on the one page.?
+use different page? 
+use error coding 
+
+
+
+
+json is built in? so i can use open library? 
+they have url base. which you type in i think. 
+https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&callback=mycallback"> 
+see https://openlibrary.org/dev/docs/api/books 
+baseurl= 'https://openlibrary.org/api/books?bibkeys=ISBN:' 
+isbn number 
+
+format, since i need it in json so 
+formaturl= &format=json
+datatypeurl=& (jscmd=viewapi, or jscmd=data, or?? jscmd=details)
+
+so like the whole url that i need for a thing is [baseurl + isbn + formaturl + datatypeurl]
+
+this returns the information, and then we select what bits of info we want to show i think. using like 'title'or something?? 
+see maybe this? https://www.youtube.com/watch?v=pxofwuWTs7c 
+i think he like saved this all in funciton. so was this what simon was talking about? 
+
+
+Thanks Lord! now i feel slightly less panicked.. but still a lot to do. 
+
+
+define a range of numbers e.g. 0-199? 
+while range <200 
+do the loop 
+Loop stuff 
+at end of loop add 1 to range... 
+
+is that what this is?? 
+		def read_lines(filename,lines): # they defined a function
+		k=''
+		f=open(filename,'r')
+		for line in range(lines):
+		k+=(f.readline())
+		return k
+
+		print(read_lines('test.txt',2)) 
+
+so, i'm not sure what do to with the loop thing. i've got in red. since it's messy
+
+Try to read the file 
+if that doesn't work display error 
+read up to 100 lines in the file. 
+
+read up to 100 lines in the isbn file 
+Line number < 100
+
+
+
+
+
+json should be standard?
+
+
+or?
+
+create class
+find file 
+open file 
+create html and css
+read file lines
+record file lines in class/array
+
+get the lines 
+put them as objects in a class 
+
+but i can only display the info an a page. i can do nothing else. 
+for each object in the class, create a page with the info?
+
+
+
+
+
+
+i have to open a file of numbers. 
+Locate file 
+Open file 
+Read file lines 
+And for each line i have to collect a bunch of in
+Basically i'm not sure if I want to use classes or objects or whaterver somehow. i might have to look up some tutorials. 
+
+What would i like to do, 
+create a main page, with some basic info. and then an idvidual page for them, but on click... or something. 
+
+desicions
+loops
+files 
+errors 
+classes and objects
+use multiplie python files and import -at least with the classes??
+
+so, i open the file. 
+I read the numbers 
+I look up the number/collect the right info 
+I compile the information (into an object) 
+I put the information into a file in their objects. 
+
+
+
+so, how do i do that. 
+
+
+open files
+create all the html bits as variables so you just plug them together
+all the fetching of the info is a link. it just links to the info.
+so how do i put info into a object when it's just linked??
+don't forget to close files 
+
+if i'm creating an object like so.. after it has been defined 
+p1 = Person("John", 36)
+where e.g. 
+Book1 = Book(value for property, value for property)
+
+
+things to add to the flowchart, (errors etc.)
+Can file be found?
+Can you read the file?
+Can you find the info?
+etc.
+
+
+class Book:
+	def __init__(self, title, author, isbn, subject, cover, publisher, year):
+	self.title = title 
+	self.author = author
+	self.isbn = isbn
+	self.subject = subject
+	self.cover = cover
+	self.publisher = publisher
+	self.year = year
+
+b1 = Book()
+print(b1.title)
+
+or maybe that is far too complicated. i'll have to look up objects and things. 
+
+
+
+
+
+
+
+
+
+
+
+
+so what i want to do with the loop is something like 
+
+-> Read the file 
+loop 
+read line 
+record line 
+input the 
+
+read lines up to 100
+
+if number of lines is over 100 - but i can't check before hand, unless i get them to input and there's not much poiny 
+but i could go read 100 lines, 
+like just repeat, but there's not much point. because i can't check, so 
+
+
+check the number of lines 
+if number of lines is over 100 
+then record only the first 100 
+OR
+record all number of lines. 
+then only inser the first 100 into a html file... 
+
+Or I could just show all of them. 
+
+Might have discovered a thing called slicing.. which might work https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/ 
+THIS 
+Or instead, you can use readlines() and then slice:
+
+text_file = open(file_to_save, "r")
+lines = text_file.readlines()
+lines = lines[19:52] 
+which reads lines 20-52
+since thet start at zero.. it's weird, but should work. 
+So i can't really count the number of lines but i can slice them... 
+
+So i can go 
+Read file up to 100 lines 
+read lines [0:100] etc. still not entirely sure how to flow chart that thought
+
+
+there is a thing called enumerate 
+https://www.w3schools.com/python/ref_func_enumerate.asp 
+which literally count the number of things... 
+
+count the number of lines (https://www.sanfoundry.com/python-program-count-lines-text-file/)
+	IF number of lines is less than 100 THEN
+		DO 
+		read line
+		record line 
+		input line into html file 
+		LOOP
+	ELSE (More than 100)
+	DO 
+	read lines up to 100
+	record lines
+	input line into html file 
+	LOOP
+
+I mean i could just try to read only up to 100, but if there are less than 100 does it break it? 
+Haven't tried. I mean it should work?? in theory? And it;s certaintly going to make your flow chart more complicated... but i haven't even figured out how to do the actual getting the info yet, i have so much to do. 
+

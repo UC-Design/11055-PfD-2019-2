@@ -1,0 +1,61 @@
+START 
+
+Do Open Python File 
+
+Do Open Menu 
+
+IF User_Input = Quit THEN 
+
+END PROGRAM 
+
+ELSE IF User_Input = text_file THEN 
+
+DO 
+
+IF Text_File_Exists THEN
+
+ISBN_List = read_text_file
+
+Create_HTML_Page
+
+Create_StyleSheet 
+
+Load_Open_Libary_API
+
+ISBN_book_cover = API_book_cover
+
+Print_Cover_To_Webpage
+
+LOOP 
+
+Write_HTML_Tags
+
+Write_HTML_Closing_Tags
+
+Open_Website
+
+Close_CSS_File
+
+Close_Text_File
+
+END LOOP
+
+ELSE 
+	
+Tell_User_File_Not_Found
+
+DO
+
+Take_User_Back_To_Menu 
+
+IF User_Input = Quit THEN 
+
+END PROGRAM 
+		
+ELSE If User_Input = A Menu Option THEN 
+
+RUN menu_function 
+
+LOOP 
+
+END 
